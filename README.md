@@ -2,6 +2,8 @@
 
 This repository provides a lightweight reproduction package for an autonomous vehicle intelligence evaluation workflow. It includes example interaction indexes, a prepared training table, and a lightweight Waymo/trajdata cache, so users can run the main workflow locally without downloading the full Waymo or InterHub dataset.
 
+This repository uses **705 Waymo interaction samples** to enable fast reproduction of the complete evaluation workflow. For access to the full dataset, please visit https://github.com/zxc-tju/InterHub to download the complete Waymo dataset, and replace the lightweight index files with `data/waymo_data index_all.csv` and `data/dlmm_interaction_index_all.csv`.
+
 The project contains three modules:
 
 1. `1-objective_metrics`: extracts objective metrics from indexed Waymo interaction segments.
@@ -14,25 +16,19 @@ The project contains three modules:
 Code and Data/
   data/
     waymo_data index.csv
-    dlmm_interaction_index.csv
+    ...
     train_data.csv
     waymo_lightweight_cache/
       waymo_0-299/
-      waymo_300-499/
-      waymo_500-799/
-      waymo_800-999/
+      ...
   1-objective_metrics/
     safety_metrics.py
-    comfort_metrics.py
-    efficiency_metrics.py
-    interaction_metrics.py
-    impact_metrics.py
+    ...
     src/
     output/
   2-subjective_evaluation/
     dlmm_model.py
-    LLM_evaluate.py
-    extract_score.py
+    ...
     src/
     prompt/
     output/
@@ -62,6 +58,8 @@ Code and Data/
 
 `data/train_data.csv` is the prepared table used by the evaluation model training module. It already contains the model-ready features and target score, including columns such as `TTC`, `PET`, `a_p`, `a_l`, `jerk`, `yaw_rate`, `task_time`, `avg_delay`, `IO`, `impact`, and `score`.
 
+For convenience, `train_data.csv` already provides the normalized objective-metric results for all **705 interaction samples**, together with the final subjective score (`score`), which is calculated as the average of **three LLM evaluation results**. Users who intend to train the model using other interaction data may normalize the extracted objective metrics according to the method described in the paper before constructing a new training table.
+
 `data/waymo_lightweight_cache` is the lightweight Waymo/trajdata cache extracted from the full cache. The code uses the `folder` and `scenario_idx` fields in the CSV files to locate the required scene directories, map caches, and `scenes_list.dill` files. The cache path is resolved dynamically relative to the repository root, so the whole `Code and Data` folder can be moved to another location as long as its internal structure is preserved.
 
 ## Environment Setup
@@ -79,27 +77,7 @@ conda activate av_intelligence_eval
 pip install -r requirement.txt
 ```
 
-Note: Waymo/trajdata loading requires trajdata's Waymo-related dependencies. If you see an error such as `trajdata Waymo support is not available` or a `WaymoDataset` error, the current conda environment is missing Waymo support for trajdata. This is an environment dependency issue, not a dataset path issue.
-
 ## Data Path Mechanism
-
-The objective metric module and the DLMM prompt module read the lightweight cache from:
-
-```text
-data/waymo_lightweight_cache/<folder>
-```
-
-For example, if a CSV row has:
-
-```text
-folder=waymo_0-299
-```
-
-the code reads:
-
-```text
-data/waymo_lightweight_cache/waymo_0-299
-```
 
 For normal lightweight reproduction, no environment variable is required.
 
@@ -215,15 +193,6 @@ Extracted scores are saved to:
 2-subjective_evaluation/output/evaluation_score.csv
 ```
 
-Optional examples:
-
-```bash
-python LLM_evaluate.py --target-id 1
-python LLM_evaluate.py --prompt-cases cp1 mp1
-python LLM_evaluate.py --overwrite
-python extract_score.py --target-id 1
-```
-
 If you do not have an OpenAI API key, you can run only `dlmm_model.py` and skip `LLM_evaluate.py` and `extract_score.py`.
 
 ## Stage 3: Evaluation Model Training
@@ -246,7 +215,11 @@ By default, the script reads:
 data/train_data.csv
 ```
 
-and writes outputs to:
+The included training table already contains normalized objective-metric values and the averaged score from three LLM evaluations for the 705 lightweight interaction samples. Therefore, users can directly run the model training script without repeating the subjective evaluation process.
+
+For training with a custom dataset, users should first extract the objective metrics, normalize them following the procedure described in the paper, and prepare a training table with the same feature structure as `train_data.csv`.
+
+Outputs are written to:
 
 ```text
 3-evaluation_model/output/
@@ -258,15 +231,6 @@ Output files:
 - `loss.png`: training and validation loss curves.
 - `attention_matrix.png`: attention-based feature relationship matrix.
 
-Optional examples:
-
-```bash
-python train_evaluation_model.py --epochs 50
-python train_evaluation_model.py --batch-size 256
-python train_evaluation_model.py --learning-rate 0.001
-python train_evaluation_model.py --data-path "../data/train_data.csv"
-```
-
 ## Recommended First Run
 
 For a first-time user, the recommended order is:
@@ -277,36 +241,3 @@ For a first-time user, the recommended order is:
 4. Run `2-subjective_evaluation/dlmm_model.py` and check `prompt/prompts.csv`.
 5. If an OpenAI API key is available, run `LLM_evaluate.py` and `extract_score.py`.
 6. Run `3-evaluation_model/train_evaluation_model.py` and check the model weights and figure outputs.
-
-## Common Issues
-
-### Waymo Data Cannot Be Found
-
-Check that this directory exists:
-
-```text
-data/waymo_lightweight_cache
-```
-
-It should contain:
-
-```text
-waymo_0-299/
-waymo_300-499/
-waymo_500-799/
-waymo_800-999/
-```
-
-The lightweight reproduction does not require the full Waymo dataset or the original full cache path.
-
-### `WaymoDataset` or `tensorflow` Errors
-
-These errors usually mean that trajdata's Waymo-related dependencies are not fully installed in the current Python environment. Install the Waymo support required by trajdata, then run the scripts again.
-
-### Can I Reproduce Without an OpenAI API Key?
-
-Yes. Without an API key, skip the online subjective evaluation stage. You can still run objective metric extraction and evaluation model training. The included `data/train_data.csv` already provides sample data for model training.
-
-### Can I Move the Project Folder?
-
-Yes. The main data paths are resolved dynamically relative to the repository root. As long as the directory structure is preserved, especially `data/waymo_lightweight_cache`, the package can run after being moved.
