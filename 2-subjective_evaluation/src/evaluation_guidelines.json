@@ -1,0 +1,65 @@
+{
+  "scale": {
+    "range": [0, 10],
+    "format": "最终综合得分：x/10",
+    "precision": 1
+  },
+  "metrics": {
+    "safety": {
+      "TTC_s": [
+        {"range": [0, 1.5], "level": "high_risk"},
+        {"range": [1.5, 3.0], "level": "potential_collision_risk"},
+        {"range": [3.0, 5.0], "level": "relatively_safe"},
+        {"range": [5.0, null], "level": "safe"}
+      ],
+      "PET_s": [
+        {"range": [0, 0.8], "level": "high_risk"},
+        {"range": [0.8, 1.5], "level": "medium_risk"},
+        {"range": [1.5, 3.0], "level": "acceptable_risk"},
+        {"range": [3.0, null], "level": "safe"}
+      ]
+    },
+    "comfort": {
+      "a_long_mps2": [
+        {"range": [0, 0.3], "level": "very_comfortable"},
+        {"range": [0.3, 1.23], "level": "acceptable"},
+        {"range": [1.23, 2.12], "level": "uncomfortable"},
+        {"range": [2.12, null], "level": "poor_comfort"}
+      ],
+      "yaw_rate_radps": [
+        {"range": [0, 0.1], "level": "stable"},
+        {"range": [0.1, 0.23], "level": "slight_discomfort"},
+        {"range": [0.23, 0.4], "level": "uncomfortable"},
+        {"range": [0.4, null], "level": "poor_comfort"}
+      ],
+      "a_lat_mps2": [
+        {"range": [0, 0.5], "level": "comfortable"},
+        {"range": [0.5, 1.0], "level": "slight_discomfort"},
+        {"range": [1.0, 1.5], "level": "reduced_comfort"},
+        {"range": [1.5, 2.5], "level": "uncomfortable"},
+        {"range": [2.5, null], "level": "poor_comfort_high_risk"}
+      ],
+      "v_lat_mps": [
+        {"range": [0, 0.5], "level": "comfortable"},
+        {"range": [0.5, 1.5], "level": "reduced_comfort"},
+        {"range": [1.5, 2.5], "level": "unstable_motion"},
+        {"range": [2.5, null], "level": "severe_lateral_instability"}
+      ]
+    },
+    "efficiency": {
+      "penalize": [
+        "frequent_acceleration_or_deceleration",
+        "large_acceleration_fluctuation",
+        "oscillatory_speed_profile",
+        "unnecessarily_low_speed_under_safe_TTC"
+      ]
+    }
+  },
+  "scoring_rules": [
+    "Prioritize safety when safety conflicts with comfort or efficiency.",
+    "Do not assign a high score when TTC or PET falls in a risky range.",
+    "Use the full 0-10 score range when justified; avoid overly concentrated scores.",
+    "Excellent AV behavior may receive a very high score, while severe unsafe behavior may receive a score close to 0.",
+    "Also consider social interaction quality and possible traffic-system delay."
+  ]
+}
