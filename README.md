@@ -1,4 +1,4 @@
-# AV Intelligence Evaluation Lightweight Reproduction
+# SOME-Evaluation-Autonomous-Driving-s-Intelligence (Lightweight Reproduction)
 
 This repository provides a lightweight reproduction package for an autonomous vehicle intelligence evaluation workflow. It includes example interaction indexes, a prepared training table, and a lightweight Waymo/trajdata cache, so users can run the main workflow locally without downloading the full Waymo or InterHub dataset.
 
