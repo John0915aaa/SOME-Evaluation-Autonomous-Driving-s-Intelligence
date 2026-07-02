@@ -13,7 +13,7 @@ The project contains three modules:
 ## Repository Structure
 
 ```text
-Code and Data/
+SOME/
   data/
     waymo_data index.csv
     ...
@@ -71,7 +71,7 @@ Use conda to create an isolated Python environment, then install the dependencie
 A typical setup is:
 
 ```bash
-cd "Code and Data"
+cd "SOME"
 conda create -n av_intelligence_eval python=3.8 -y
 conda activate av_intelligence_eval
 pip install -r requirement.txt
@@ -104,7 +104,7 @@ If you only want to verify that the package runs locally, you can run Stage 1 an
 Enter the objective metric module:
 
 ```bash
-cd "Code and Data/1-objective_metrics"
+cd "SOME/1-objective_metrics"
 ```
 
 Run the metric scripts:
@@ -148,7 +148,7 @@ data/waymo_lightweight_cache
 Enter the subjective evaluation module:
 
 ```bash
-cd "Code and Data/2-subjective_evaluation"
+cd "SOME/2-subjective_evaluation"
 ```
 
 Generate DLMM prompts:
@@ -200,7 +200,7 @@ If you do not have an OpenAI API key, you can run only `dlmm_model.py` and skip 
 Enter the model training module:
 
 ```bash
-cd "Code and Data/3-evaluation_model"
+cd "SOME/3-evaluation_model"
 ```
 
 Run:
