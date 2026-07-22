@@ -1,5 +1,7 @@
 # SOME: Evaluation Autonomous Driving's Intelligence (Lightweight Reproduction)
 
+![Autonomous Driving Intelligence Evaluation Process](overview.png)
+
 ## Overview
 
 This repository provides a lightweight reproduction of an autonomous-driving intelligence evaluation workflow. It evaluates vehicle interactions from five dimensions, combines ten normalized objective metrics with LLM-based subjective scores, and trains an attention-based neural network to approximate the final intelligence score.
