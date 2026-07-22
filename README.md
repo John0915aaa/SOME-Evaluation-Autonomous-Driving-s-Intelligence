@@ -205,7 +205,7 @@ python -c "import torch, trajdata, pandas, openai; print('Environment setup comp
 
 The three stages should normally be run in order. The repository already includes example outputs, so users who only want to test model training may run Stage 3 directly.
 
-![workflow](workflow.png)
+![workflow](workflow.svg)
 
 ### Stage 1: Extract Objective Metrics
 
