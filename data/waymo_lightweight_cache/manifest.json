@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-06-30T19:21:26",
+  "index_csv": "/media/zjr/\u79fb\u52a8\u786c\u76d8/data_test/data/waymo_data index.csv",
+  "output_root": "/media/zjr/\u79fb\u52a8\u786c\u76d8/data_test/data/waymo_lightweight_cache",
+  "dry_run": false,
+  "groups": [
+    {
+      "folder": "waymo_0-299",
+      "dataset": "waymo_train",
+      "source": "/home/zjr/\u6587\u6863/InterHub_cache/waymo_0-299",
+      "destination": "/media/zjr/\u79fb\u52a8\u786c\u76d8/data_test/data/waymo_lightweight_cache/waymo_0-299",
+      "requested_scenes": 205,
+      "copied_scenes": 205,
+      "copied_map_items": 1025,
+      "filtered_scenes_list": 205,
+      "missing_paths": []
+    },
+    {
+      "folder": "waymo_300-499",
+      "dataset": "waymo_train",
+      "source": "/home/zjr/\u6587\u6863/InterHub_cache/waymo_300-499",
+      "destination": "/media/zjr/\u79fb\u52a8\u786c\u76d8/data_test/data/waymo_lightweight_cache/waymo_300-499",
+      "requested_scenes": 154,
+      "copied_scenes": 154,
+      "copied_map_items": 770,
+      "filtered_scenes_list": 154,
+      "missing_paths": []
+    },
+    {
+      "folder": "waymo_500-799",
+      "dataset": "waymo_train",
+      "source": "/home/zjr/\u6587\u6863/InterHub_cache/waymo_500-799",
+      "destination": "/media/zjr/\u79fb\u52a8\u786c\u76d8/data_test/data/waymo_lightweight_cache/waymo_500-799",
+      "requested_scenes": 204,
+      "copied_scenes": 204,
+      "copied_map_items": 1020,
+      "filtered_scenes_list": 204,
+      "missing_paths": []
+    },
+    {
+      "folder": "waymo_800-999",
+      "dataset": "waymo_train",
+      "source": "/home/zjr/\u6587\u6863/InterHub_cache/waymo_800-999",
+      "destination": "/media/zjr/\u79fb\u52a8\u786c\u76d8/data_test/data/waymo_lightweight_cache/waymo_800-999",
+      "requested_scenes": 131,
+      "copied_scenes": 131,
+      "copied_map_items": 655,
+      "filtered_scenes_list": 131,
+      "missing_paths": []
+    }
+  ]
+}

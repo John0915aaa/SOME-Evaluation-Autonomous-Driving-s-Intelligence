@@ -1,0 +1,706 @@
+﻿index,prompt_case,dataset,folder,scenario_idx,track_id,start,end,key_agents,path_relationship,turn_label,priority_label,lane_change_type,lane_change_time,lane_change_time_index,lane_change_end_time,lane_change_end_time_index,type_flag_init
+1,cp1,waymo_train,waymo_0-299,32111,1272;ego,3,8,ego;1272,CP,R-R,equal,no-need,no-need,no-need,no-need,no-need,
+2,cp1,waymo_train,waymo_0-299,3671,794;ego,28,33,ego;794,CP,S-L,794,no-need,no-need,no-need,no-need,no-need,
+3,cp1,waymo_train,waymo_0-299,46973,203;ego,18,31,ego;203,CP,S-L,203,no-need,no-need,no-need,no-need,no-need,
+4,mp2,waymo_train,waymo_0-299,51490,2018;ego,35,52,2018;ego,MP,S-S,ego,HV_front,42,17,55,30,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+5,mp2,waymo_train,waymo_0-299,5567,2184;ego,25,56,2184;ego,MP,S-S,ego,HV_front,41,26,57,42,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+6,mp2,waymo_train,waymo_0-299,79408,1998;ego,26,30,1998;ego,MP,S-S,ego,HV_front,16,0,45,29,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+7,mp1,waymo_train,waymo_0-299,95569,2248;ego,37,54,2248;ego,MP,S-S,equal,AV_back,43,16,71,44,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+8,cp1,waymo_train,waymo_0-299,102587,924;ego,23,49,ego;924,CP,S-L,924,no-need,no-need,no-need,no-need,no-need,
+9,cp1,waymo_train,waymo_0-299,123876,2865;ego,38,42,2865;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+10,mp2,waymo_train,waymo_0-299,134006,2657;ego,36,66,2657;ego,MP,S-S,ego,HV_front,56,30,67,41,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+11,mp1,waymo_train,waymo_0-299,14720,899;ego,16,38,899;ego,MP,S-S,899,AV_back,38,32,56,50,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+12,mp2,waymo_train,waymo_0-299,15227,1844;ego,19,50,1844;ego,MP,S-S,ego,HV_front,35,26,55,46,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+13,mp2,waymo_train,waymo_0-299,16714,526;ego,14,46,526;ego,MP,S-S,equal,HV_front,33,29,48,44,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+14,cp1,waymo_train,waymo_0-299,19079,165;ego,32,45,165;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+15,mp2,waymo_train,waymo_0-299,20296,950;ego,0,4,950;ego,MP,S-S,ego,HV_front,0,0,13,13,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+16,mp2,waymo_train,waymo_0-299,20708,5;ego,3,28,5;ego,MP,S-S,equal,HV_front,27,27,52,52,"ego与HV在同一车道上, ego在HV后方直行, HV在ego前方向左侧车道变道."
+17,mp2,waymo_train,waymo_0-299,20895,1936;ego,12,30,1936;ego,MP,S-S,ego,HV_front,19,17,30,28,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+18,mp2,waymo_train,waymo_0-299,24389,1952;ego,26,37,1952;ego,MP,S-S,ego,HV_front,16,0,27,11,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+19,mp2,waymo_train,waymo_0-299,25708,1887;ego,33,50,1887;ego,MP,S-S,ego,HV_front,38,15,56,33,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+20,cp1,waymo_train,waymo_0-299,27447,68;ego,0,5,ego;68,CP,S-L,68,no-need,no-need,no-need,no-need,no-need,
+21,mp2,waymo_train,waymo_0-299,27765,2421;ego,23,34,2421;ego,MP,S-S,ego,HV_front,26,13,42,29,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+22,mp2,waymo_train,waymo_0-299,29833,798;ego,5,27,798;ego,MP,S-S,ego,HV_front,16,16,32,32,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+23,cp1,waymo_train,waymo_0-299,30020,1117;ego,29,39,1117;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+24,mp1,waymo_train,waymo_0-299,90380,861;ego,0,11,861;ego,MP,S-S,861,AV_back,7,7,28,28,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+25,cp1,waymo_train,waymo_0-299,91392,1093;ego,31,40,ego;1093,CP,S-L,1093,no-need,no-need,no-need,no-need,no-need,
+26,mp2,waymo_train,waymo_0-299,91425,1483;ego,6,21,1483;ego,MP,S-S,ego,HV_front,0,0,33,33,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+27,cp1,waymo_train,waymo_0-299,91832,4313;ego,13,18,ego;4313,CP,S-L,4313,no-need,no-need,no-need,no-need,no-need,
+28,mp2,waymo_train,waymo_0-299,91933,518;ego,46,56,518;ego,MP,S-S,ego,HV_front,44,8,62,26,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+29,mp2,waymo_train,waymo_0-299,31651,1806;ego,12,34,1806;ego,MP,S-S,ego,HV_front,15,13,39,37,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+30,mp1,waymo_train,waymo_0-299,93102,701;ego,0,20,701;ego,MP,S-S,701,AV_back,14,14,39,39,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+31,mp2,waymo_train,waymo_0-299,94336,957;ego,1,13,957;ego,MP,S-S,ego,HV_front,0,0,21,21,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+32,cp1,waymo_train,waymo_0-299,35451,389;391;ego,35,40,391;ego,CP,S-L,389,no-need,no-need,no-need,no-need,no-need,
+33,mp1,waymo_train,waymo_0-299,96603,1803;ego,0,14,1803;ego,MP,S-S,1803,AV_back,12,12,29,29,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+34,mp2,waymo_train,waymo_0-299,97207,2371;ego,34,61,2371;ego,MP,S-S,ego,HV_front,52,28,62,38,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+35,mp1,waymo_train,waymo_0-299,37022,20;ego,26,53,20;ego,MP,S-S,equal,AV_back,46,30,66,50,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+36,mp2,waymo_train,waymo_0-299,99483,1094;ego,39,51,1094;ego,MP,S-S,equal,HV_front,41,12,69,40,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+37,mp2,waymo_train,waymo_0-299,39058,182;ego,14,29,182;ego,MP,S-S,ego,HV_front,4,0,27,23,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+38,mp2,waymo_train,waymo_0-299,100679,727;ego,24,59,727;ego,MP,S-S,ego,HV_front,45,31,61,47,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+39,cp1,waymo_train,waymo_0-299,100967,728;741;ego,21,33,728;ego,CP,R-S,741,no-need,no-need,no-need,no-need,no-need,
+40,cp1,waymo_train,waymo_0-299,100967,728;ego,14,38,728;ego,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+41,mp1,waymo_train,waymo_0-299,40040,3006;ego,31,58,3006;ego,MP,S-S,3006,AV_back,60,39,78,57,"ego与HV在同一车道上, HV在ego前方直行, ego在HV后方向右侧车道变道."
+42,mp2,waymo_train,waymo_0-299,102468,1818;ego,0,13,1818;ego,MP,S-S,ego,HV_front,14,14,30,30,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+43,cp1,waymo_train,waymo_0-299,41580,2428;ego,10,18,2428;ego,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+44,mp1,waymo_train,waymo_0-299,105812,566;ego,9,31,566;ego,MP,S-S,566,AV_back,27,27,51,51,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+45,mp2,waymo_train,waymo_0-299,45858,2509;2512;ego,27,35,2509;ego,MP,S-S,2512,HV_front,41,24,42,25,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+46,mp2,waymo_train,waymo_0-299,10815,1556;ego,0,25,1556;ego,MP,S-S,ego,HV_front,11,11,32,32,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+47,mp2,waymo_train,waymo_0-299,108745,118;ego,15,31,118;ego,MP,S-S,ego,HV_front,11,6,35,30,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+48,cp1,waymo_train,waymo_0-299,109961,344;ego,21,29,344;ego,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+49,mp2,waymo_train,waymo_0-299,49119,324;ego,0,6,324;ego,MP,S-S,ego,HV_front,0,0,10,10,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+50,mp2,waymo_train,waymo_0-299,112924,97;ego,0,6,97;ego,MP,S-S,ego,HV_front,0,0,20,20,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+51,mp2,waymo_train,waymo_0-299,114054,1150;ego,18,35,1150;ego,MP,S-S,ego,HV_front,20,12,43,35,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+52,cp1,waymo_train,waymo_0-299,52182,1332;ego,31,39,ego;1332,CP,S-L,1332,no-need,no-need,no-need,no-need,no-need,
+53,mp2,waymo_train,waymo_0-299,115062,2930;2933;ego,33,48,2930;ego,MP,S-S,2933,HV_front,45,22,63,40,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+54,mp2,waymo_train,waymo_0-299,52926,1;ego,13,47,1;ego,MP,S-S,ego,HV_front,30,27,45,42,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+55,mp2,waymo_train,waymo_0-299,115640,545;ego,0,7,545;ego,MP,S-S,ego,HV_front,0,0,10,10,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+56,mp2,waymo_train,waymo_0-299,116105,2352;ego,33,57,2352;ego,MP,S-S,ego,HV_front,46,23,62,39,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+57,cp1,waymo_train,waymo_0-299,53713,1870;ego,15,20,ego;1870,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+58,mp2,waymo_train,waymo_0-299,116679,760;ego,22,40,760;ego,MP,S-S,ego,HV_front,24,12,41,29,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+59,cp1,waymo_train,waymo_0-299,118224,294;295;ego,35,41,ego;295,CP,L-S,295,no-need,no-need,no-need,no-need,no-need,
+60,mp2,waymo_train,waymo_0-299,118961,1860;ego,26,46,1860;ego,MP,S-S,equal,HV_front,29,13,54,38,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+61,mp2,waymo_train,waymo_0-299,119354,1624;1669;ego,31,48,1669;ego,MP,S-S,1669,HV_front,57,36,65,44,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+62,mp2,waymo_train,waymo_0-299,57654,996;ego,37,42,996;ego,MP,S-S,ego,HV_front,38,11,59,32,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+63,cp1,waymo_train,waymo_0-299,58006,627;ego,37,51,ego;627,CP,S-L,627,no-need,no-need,no-need,no-need,no-need,
+64,cp1,waymo_train,waymo_0-299,123816,1865;ego,29,42,ego;1865,CP,S-L,1865,no-need,no-need,no-need,no-need,no-need,
+65,mp2,waymo_train,waymo_0-299,60754,364;ego,2,15,364;ego,MP,S-S,equal,HV_front,0,0,14,14,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+66,cp1,waymo_train,waymo_0-299,124480,822;ego,14,18,822;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+67,cp1,waymo_train,waymo_0-299,126269,73;ego,16,33,ego;73,CP,R-L,ego,no-need,no-need,no-need,no-need,no-need,
+68,mp1,waymo_train,waymo_0-299,62972,514;ego,10,23,514;ego,MP,S-S,514,AV_back,17,17,41,41,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+69,mp2,waymo_train,waymo_0-299,63545,1558;ego,38,67,1558;ego,MP,S-S,ego,HV_front,53,25,70,42,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+70,mp2,waymo_train,waymo_0-299,128041,1991;ego,3,29,1991;ego,MP,S-S,ego,HV_front,18,18,34,34,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+71,cp1,waymo_train,waymo_0-299,128046,510;ego,34,38,510;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+72,cp1,waymo_train,waymo_0-299,128061,1511;ego,21,32,1511;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+73,mp2,waymo_train,waymo_0-299,128172,0;2;ego,0,9,2;ego,MP,S-S,2,HV_front,0,0,28,28,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+74,mp2,waymo_train,waymo_0-299,128987,851;ego,35,56,851;ego,MP,S-S,ego,HV_front,41,16,65,40,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+75,cp1,waymo_train,waymo_0-299,129657,1167;ego,41,46,ego;1167,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+76,mp2,waymo_train,waymo_0-299,130102,0;ego,0,5,0;ego,MP,S-S,equal,HV_front,0,0,11,11,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+77,mp2,waymo_train,waymo_0-299,130664,944;ego,13,45,944;ego,MP,S-S,ego,HV_front,38,35,48,45,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+78,cp1,waymo_train,waymo_0-299,132604,147;ego,31,40,ego;147,CP,L-R,147,no-need,no-need,no-need,no-need,no-need,
+79,mp2,waymo_train,waymo_0-299,69563,1619;ego,0,16,1619;ego,MP,S-S,ego,HV_front,0,0,15,15,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+80,mp2,waymo_train,waymo_0-299,134586,19;ego,38,65,19;ego,MP,S-S,ego,HV_front,54,26,68,40,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+81,cp1,waymo_train,waymo_0-299,70862,1201;ego,13,18,ego;1201,CP,S-R,1201,no-need,no-need,no-need,no-need,no-need,
+82,mp2,waymo_train,waymo_0-299,136334,874;ego,30,55,874;ego,MP,S-S,ego,HV_front,45,25,61,41,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+83,cp1,waymo_train,waymo_0-299,136545,22;ego,10,29,22;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+84,mp2,waymo_train,waymo_0-299,137674,121;ego,9,18,121;ego,MP,S-S,ego,HV_front,0,0,25,25,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+85,mp2,waymo_train,waymo_0-299,138672,448;ego,4,27,448;ego,MP,S-S,equal,HV_front,10,10,34,34,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+86,mp1,waymo_train,waymo_0-299,75730,1522;ego,23,39,1522;ego,MP,S-S,ego,AV_back,24,11,32,19,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+87,cp1,waymo_train,waymo_0-299,7635,630;ego,36,50,ego;630,CP,S-L,630,no-need,no-need,no-need,no-need,no-need,
+88,mp2,waymo_train,waymo_0-299,141163,1055;ego,0,26,1055;ego,MP,S-S,ego,HV_front,13,13,26,26,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+89,cp1,waymo_train,waymo_0-299,141367,1629;ego,14,19,ego;1629,CP,S-L,1629,no-need,no-need,no-need,no-need,no-need,
+90,mp2,waymo_train,waymo_0-299,77340,3023;ego,30,53,3023;ego,MP,S-S,ego,HV_front,39,19,54,34,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+91,mp2,waymo_train,waymo_0-299,142692,10;ego,38,51,10;ego,MP,S-S,equal,HV_front,43,15,44,16,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+92,mp2,waymo_train,waymo_0-299,142643,834;ego,0,7,834;ego,MP,S-S,ego,HV_front,0,0,14,14,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+93,mp2,waymo_train,waymo_0-299,78420,1445;1449;ego,35,53,1445;ego,MP,S-S,1449,HV_front,54,29,69,44,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+94,mp2,waymo_train,waymo_0-299,144899,2082;ego,0,10,2082;ego,MP,S-S,equal,HV_front,0,0,13,13,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+95,mp2,waymo_train,waymo_0-299,80298,1173;ego,39,60,1173;ego,MP,S-S,ego,HV_front,34,5,60,31,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+96,mp2,waymo_train,waymo_0-299,82104,2678;2685;ego,37,44,2678;ego,MP,S-S,2685,HV_front,51,24,67,40,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+97,mp1,waymo_train,waymo_0-299,82350,811;ego,0,23,811;ego,MP,S-S,811,AV_back,17,17,41,41,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+98,mp2,waymo_train,waymo_0-299,8355,2653;ego,5,26,2653;ego,MP,S-S,ego,HV_front,19,19,39,39,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+99,mp2,waymo_train,waymo_0-299,8356,1911;1912;ego,35,51,1912;ego,MP,S-L,1911,HV_front,52,27,68,43,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+100,mp2,waymo_train,waymo_0-299,83990,1936;ego,34,49,1936;ego,MP,S-S,ego,HV_front,30,6,61,37,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+101,cp1,waymo_train,waymo_0-299,84631,1071;ego,40,48,1071;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+102,cp1,waymo_train,waymo_0-299,85224,44;ego,0,7,ego;44,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+103,mp2,waymo_train,waymo_0-299,88794,7;ego,18,27,7;ego,MP,S-S,ego,HV_front,19,11,41,33,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+104,cp1,waymo_train,waymo_300-499,7312,924;ego,0,9,ego;924,CP,S-L,924,no-need,no-need,no-need,no-need,no-need,
+105,mp2,waymo_train,waymo_300-499,1013,3457;ego,35,48,3457;ego,MP,S-S,ego,HV_front,34,9,50,25,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+106,mp2,waymo_train,waymo_300-499,3052,572;ego,23,50,572;ego,MP,S-S,ego,HV_front,39,26,58,45,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+107,mp2,waymo_train,waymo_300-499,3545,95;ego,50,54,95;ego,MP,S-S,ego,HV_front,40,0,55,15,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+108,mp2,waymo_train,waymo_300-499,1698,3222;ego,28,58,3222;ego,MP,S-S,ego,HV_front,47,29,63,45,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+109,cp1,waymo_train,waymo_300-499,4263,2;ego,25,41,2;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+110,mp2,waymo_train,waymo_300-499,6567,862;ego,0,4,862;ego,MP,S-S,ego,HV_front,0,0,12,12,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+111,cp1,waymo_train,waymo_300-499,7147,13;ego,22,31,ego;13,CP,S-L,13,no-need,no-need,no-need,no-need,no-need,
+112,mp2,waymo_train,waymo_300-499,8791,458;ego,10,18,458;ego,MP,S-S,ego,HV_front,12,12,32,32,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+113,mp2,waymo_train,waymo_300-499,10837,403;ego,1,29,403;ego,MP,S-S,ego,HV_front,16,16,38,38,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+114,mp2,waymo_train,waymo_300-499,11043,2566;ego,14,30,2566;ego,MP,R-S,ego,HV_front,31,27,33,29,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+115,cp1,waymo_train,waymo_300-499,12568,630;ego,26,40,ego;630,CP,S-L,630,no-need,no-need,no-need,no-need,no-need,
+116,mp1,waymo_train,waymo_300-499,13381,3104;ego,40,61,3104;ego,MP,S-S,equal,AV_back,52,22,84,54,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+117,mp2,waymo_train,waymo_300-499,14368,99;ego,26,30,99;ego,MP,S-S,ego,HV_front,39,23,53,37,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+118,mp2,waymo_train,waymo_300-499,15819,1233;ego,9,13,1233;ego,MP,S-S,ego,HV_front,0,0,13,13,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+119,mp2,waymo_train,waymo_300-499,17699,1355;ego,37,55,1355;ego,MP,S-S,equal,HV_front,35,8,62,35,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+120,cp1,waymo_train,waymo_300-499,18460,1667;ego,15,20,ego;1667,CP,S-L,1667,no-need,no-need,no-need,no-need,no-need,
+121,mp2,waymo_train,waymo_300-499,24084,1929;1937;ego,43,57,1937;ego,MP,S-S,1937,HV_front,37,4,38,5,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+122,mp2,waymo_train,waymo_300-499,28017,1582;ego,0,17,1582;ego,MP,S-S,ego,HV_front,2,2,21,21,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+123,mp2,waymo_train,waymo_300-499,29531,38;ego,37,51,38;ego,MP,S-S,ego,HV_front,38,11,57,30,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+124,mp2,waymo_train,waymo_300-499,30263,449;ego,3,9,449;ego,MP,S-S,ego,HV_front,0,0,14,14,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+125,mp2,waymo_train,waymo_300-499,31872,2421;ego,31,45,2421;ego,MP,S-S,ego,HV_front,31,10,51,30,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+126,mp2,waymo_train,waymo_300-499,33029,2509;ego,0,6,2509;ego,MP,S-S,equal,HV_front,0,0,13,13,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+127,mp2,waymo_train,waymo_300-499,33167,440;ego,9,14,440;ego,MP,S-S,ego,HV_front,12,12,27,27,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+128,cp1,waymo_train,waymo_300-499,33208,22;ego,0,9,22;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+129,mp2,waymo_train,waymo_300-499,33632,493;ego,30,50,493;ego,MP,S-S,equal,HV_front,37,17,56,36,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+130,mp2,waymo_train,waymo_300-499,33825,2034;ego,17,27,2034;ego,MP,S-S,ego,HV_front,9,2,31,24,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+131,cp1,waymo_train,waymo_300-499,36430,55;ego,0,8,55;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+132,mp2,waymo_train,waymo_300-499,36726,1673;ego,25,56,1673;ego,MP,S-S,ego,HV_front,41,26,55,40,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+133,mp1,waymo_train,waymo_300-499,37568,819;ego,38,51,819;ego,MP,S-S,equal,AV_back,39,11,71,43,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+134,mp2,waymo_train,waymo_300-499,39123,2072;ego,0,11,2072;ego,MP,S-S,ego,HV_front,0,0,15,15,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+135,mp2,waymo_train,waymo_300-499,39488,816;ego,24,31,816;ego,MP,S-S,ego,HV_front,21,7,35,21,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+136,mp2,waymo_train,waymo_300-499,40777,776;ego,22,27,776;ego,MP,S-S,equal,HV_front,16,4,46,34,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+137,mp2,waymo_train,waymo_300-499,42498,874;ego,0,25,874;ego,MP,S-S,ego,HV_front,15,15,31,31,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+138,mp2,waymo_train,waymo_300-499,45365,2520;ego,7,34,2520;ego,MP,S-S,ego,HV_front,15,15,38,38,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+139,mp2,waymo_train,waymo_300-499,47578,2564;ego,17,31,2564;ego,MP,S-S,ego,HV_front,7,0,41,34,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+140,mp2,waymo_train,waymo_300-499,49968,2678;2685;ego,7,14,2678;ego,MP,S-S,2685,HV_front,21,21,37,37,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+141,mp2,waymo_train,waymo_300-499,51732,1565;ego,30,60,1565;ego,MP,S-S,ego,HV_front,50,30,62,42,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+142,mp2,waymo_train,waymo_300-499,52376,2;ego,26,35,2;ego,MP,S-S,equal,HV_front,40,24,54,38,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+143,cp1,waymo_train,waymo_300-499,52525,73;ego,6,23,ego;73,CP,R-L,ego,no-need,no-need,no-need,no-need,no-need,
+144,mp2,waymo_train,waymo_300-499,52760,1344;1347;ego,35,45,1347;ego,MP,S-S,equal,HV_front,50,25,67,42,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+145,cp1,waymo_train,waymo_300-499,53170,1672;ego,41,49,ego;1672,CP,S-L,1672,no-need,no-need,no-need,no-need,no-need,
+146,cp1,waymo_train,waymo_300-499,53427,1658;ego,36,42,1658;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+147,mp2,waymo_train,waymo_300-499,53674,426;ego,0,9,426;ego,MP,S-S,ego,HV_front,0,0,12,12,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+148,mp2,waymo_train,waymo_300-499,55806,989;ego,20,49,989;ego,MP,S-S,ego,HV_front,34,24,52,42,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+149,mp2,waymo_train,waymo_300-499,59323,1856;ego,6,27,1856;ego,MP,S-S,ego,HV_front,16,16,37,37,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+150,mp2,waymo_train,waymo_300-499,59768,2678;ego,0,16,2678;ego,MP,S-S,ego,HV_front,1,1,17,17,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+151,mp2,waymo_train,waymo_300-499,60782,484;ego,5,18,484;ego,MP,S-S,ego,HV_front,0,0,29,29,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+152,mp2,waymo_train,waymo_300-499,60921,1;ego,7,32,1;ego,MP,S-S,ego,HV_front,22,22,37,37,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+153,mp2,waymo_train,waymo_300-499,61572,807;ego,20,25,807;ego,MP,R-S,ego,HV_front,29,19,31,21,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+154,mp2,waymo_train,waymo_300-499,63117,2357;ego,45,60,2357;ego,MP,S-S,ego,HV_front,48,13,62,27,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+155,mp2,waymo_train,waymo_300-499,65037,276;ego,22,33,276;ego,MP,S-S,ego,HV_front,20,8,45,33,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+156,cp1,waymo_train,waymo_300-499,65447,17;ego,7,16,ego;17,CP,S-L,17,no-need,no-need,no-need,no-need,no-need,
+157,cp1,waymo_train,waymo_300-499,66183,207;ego,25,47,ego;207,CP,S-L,207,no-need,no-need,no-need,no-need,no-need,
+158,mp2,waymo_train,waymo_300-499,69948,2078;ego,31,57,2078;ego,MP,S-S,ego,HV_front,44,23,57,36,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+159,mp1,waymo_train,waymo_300-499,71193,0;ego,13,18,0;ego,MP,R-S,ego,AV_back,14,11,33,30,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+160,mp2,waymo_train,waymo_300-499,72906,1300;ego,28,37,1300;ego,MP,S-S,equal,HV_front,20,2,46,28,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+161,mp2,waymo_train,waymo_300-499,74076,229;ego,40,77,ego;229,MP,L-R,229,HV_front,50,20,60,30,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+162,mp2,waymo_train,waymo_300-499,74479,430;ego,35,63,430;ego,MP,S-S,ego,HV_front,46,21,64,39,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+163,mp2,waymo_train,waymo_300-499,74600,2;ego,8,15,2;ego,MP,S-S,ego,HV_front,0,0,17,17,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+164,mp2,waymo_train,waymo_300-499,74720,1352;ego,3,10,1352;ego,MP,S-S,ego,HV_front,0,0,16,16,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+165,mp2,waymo_train,waymo_300-499,75059,136;ego,3,21,136;ego,MP,S-S,ego,HV_front,1,1,24,24,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+166,cp1,waymo_train,waymo_300-499,75126,485;ego,25,29,ego;485,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+167,mp2,waymo_train,waymo_300-499,83000,926;ego,0,17,926;ego,MP,S-S,ego,HV_front,0,0,16,16,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+168,cp1,waymo_train,waymo_300-499,84355,399;ego,21,32,399;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+169,mp2,waymo_train,waymo_300-499,86995,1089;1092;ego,0,12,1092;ego,MP,S-S,1092,HV_front,5,5,14,14,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+170,mp2,waymo_train,waymo_300-499,86995,1089;1092;ego,0,12,1092;ego,MP,S-S,1092,HV_front,5,5,14,14,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+171,mp2,waymo_train,waymo_300-499,87504,3244;ego,36,57,3244;ego,MP,S-S,ego,HV_front,44,18,59,33,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+172,mp2,waymo_train,waymo_300-499,88500,1856;ego,0,7,1856;ego,MP,S-S,ego,HV_front,0,0,17,17,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+173,mp2,waymo_train,waymo_300-499,91011,2448;ego,0,12,2448;ego,MP,S-S,ego,HV_front,2,2,13,13,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+174,mp2,waymo_train,waymo_300-499,91653,796;ego,34,57,796;ego,MP,S-S,ego,HV_front,46,22,64,40,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+175,mp2,waymo_train,waymo_300-499,92088,2308;ego,21,48,2308;ego,MP,S-S,ego,HV_front,34,23,50,39,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+176,mp2,waymo_train,waymo_300-499,92724,255;ego,54,63,255;ego,MP,S-S,ego,HV_front,47,3,72,28,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+177,cp1,waymo_train,waymo_300-499,96333,1738;ego,0,16,1738;ego,CP,S-R,1738,no-need,no-need,no-need,no-need,no-need,
+178,mp2,waymo_train,waymo_300-499,97309,1297;ego,8,21,1297;ego,MP,S-S,ego,HV_front,11,11,32,32,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+179,mp2,waymo_train,waymo_500-799,21494,4;ego,0,28,4;ego,MP,S-S,ego,HV_front,18,18,29,29,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+180,cp1,waymo_train,waymo_500-799,3596,249;ego,0,7,249;ego,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+181,mp2,waymo_train,waymo_500-799,41283,583;ego,34,62,583;ego,MP,S-S,ego,HV_front,50,26,66,42,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+182,cp1,waymo_train,waymo_500-799,44011,728;ego,0,18,728;ego,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+183,cp1,waymo_train,waymo_500-799,44011,728;741;ego,1,13,728;ego,CP,R-S,741,no-need,no-need,no-need,no-need,no-need,
+184,mp2,waymo_train,waymo_500-799,45391,2;ego,20,43,2;ego,MP,S-S,equal,HV_front,32,22,47,37,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+185,cp1,waymo_train,waymo_500-799,4842,204;ego,0,5,ego;204,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+186,mp2,waymo_train,waymo_500-799,61393,3512;ego,7,28,3512;ego,MP,S-S,ego,HV_front,13,13,35,35,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+187,mp2,waymo_train,waymo_500-799,73980,1176;ego,40,57,1176;ego,MP,S-S,ego,HV_front,30,0,66,36,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+188,mp2,waymo_train,waymo_500-799,81156,207;ego,46,50,207;ego,MP,S-S,ego,HV_front,48,12,52,16,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+189,mp2,waymo_train,waymo_500-799,8268,2235;ego,45,59,2235;ego,MP,S-S,ego,HV_front,41,6,62,27,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+190,mp2,waymo_train,waymo_500-799,103660,2220;2227;ego,30,40,2220;ego,MP,S-S,2227,HV_front,40,20,41,21,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+191,cp1,waymo_train,waymo_500-799,13675,1667;ego,15,20,ego;1667,CP,S-L,1667,no-need,no-need,no-need,no-need,no-need,
+192,mp2,waymo_train,waymo_500-799,15617,39;ego,39,71,39;ego,MP,S-S,ego,HV_front,57,28,71,42,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+193,mp2,waymo_train,waymo_500-799,16609,1814;ego,0,11,1814;ego,MP,S-S,ego,HV_front,0,0,19,19,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+194,cp1,waymo_train,waymo_500-799,18275,1279;ego,17,27,1279;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+195,cp1,waymo_train,waymo_500-799,18960,1576;ego,1,24,ego;1576,CP,S-L,1576,no-need,no-need,no-need,no-need,no-need,
+196,mp2,waymo_train,waymo_500-799,19138,2116;ego,0,7,2116;ego,MP,S-S,equal,HV_front,0,0,8,8,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+197,mp2,waymo_train,waymo_500-799,21827,394;ego,0,10,394;ego,MP,S-S,equal,HV_front,0,0,24,24,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+198,mp2,waymo_train,waymo_500-799,22409,757;ego,0,5,757;ego,MP,S-S,ego,HV_front,0,0,8,8,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+199,mp2,waymo_train,waymo_500-799,23447,1205;ego,36,59,1205;ego,MP,S-S,ego,HV_front,42,16,59,33,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+200,mp2,waymo_train,waymo_500-799,25101,590;ego,0,14,590;ego,MP,S-S,ego,HV_front,0,0,17,17,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+201,cp1,waymo_train,waymo_500-799,25331,765;ego,21,27,765;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+202,cp1,waymo_train,waymo_500-799,81293,1201;ego,13,18,ego;1201,CP,S-R,1201,no-need,no-need,no-need,no-need,no-need,
+203,mp2,waymo_train,waymo_500-799,81963,1166;ego,18,49,1166;ego,MP,S-S,ego,HV_front,39,31,58,50,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+204,mp1,waymo_train,waymo_500-799,82079,603;611;ego,40,46,611;ego,MP,S-S,603,AV_back,32,2,55,25,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+205,cp1,waymo_train,waymo_500-799,30061,627;ego,17,31,ego;627,CP,S-L,627,no-need,no-need,no-need,no-need,no-need,
+206,mp1,waymo_train,waymo_500-799,31145,514;ego,30,43,514;ego,MP,S-S,514,AV_back,37,17,61,41,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+207,cp1,waymo_train,waymo_500-799,85831,55;ego,0,8,55;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+208,mp2,waymo_train,waymo_500-799,32999,458;ego,40,48,458;ego,MP,S-S,equal,HV_front,42,12,62,32,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+209,mp1,waymo_train,waymo_500-799,33356,182;ego,8,36,182;ego,MP,S-S,182,AV_back,31,31,47,47,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+210,mp1,waymo_train,waymo_500-799,87038,32;ego,0,24,32;ego,MP,S-S,32,AV_back,12,12,36,36,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+211,mp2,waymo_train,waymo_500-799,34141,3864;ego,19,46,3864;ego,MP,S-S,ego,HV_front,34,25,52,43,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+212,cp1,waymo_train,waymo_500-799,87917,1443;ego,20,27,1443;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+213,mp2,waymo_train,waymo_500-799,35190,2678;ego,5,17,2678;ego,MP,S-S,ego,HV_front,0,0,8,8,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+214,cp1,waymo_train,waymo_500-799,3625,56;ego,13,21,ego;56,CP,S-L,56,no-need,no-need,no-need,no-need,no-need,
+215,mp2,waymo_train,waymo_500-799,90559,1061;ego,0,9,1061;ego,MP,S-S,ego,HV_front,0,0,12,12,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+216,mp2,waymo_train,waymo_500-799,90736,950;ego,28,49,950;ego,MP,S-S,ego,HV_front,34,16,53,35,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+217,mp2,waymo_train,waymo_500-799,90874,1393;ego,21,27,1393;ego,MP,S-S,ego,HV_front,24,13,43,32,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+218,mp2,waymo_train,waymo_500-799,39025,2139;ego,40,67,2139;ego,MP,S-S,ego,HV_front,43,13,71,41,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+219,mp2,waymo_train,waymo_500-799,93026,813;ego,36,43,ego;813,MP,L-R,813,HV_front,39,13,40,14,"ego与HV在同一车道上, ego在HV后方直行, HV在ego后方向右侧车道变道."
+220,mp2,waymo_train,waymo_500-799,93061,2308;ego,31,58,2308;ego,MP,S-S,ego,HV_front,44,23,60,39,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+221,mp2,waymo_train,waymo_500-799,4008,3406;ego,12,35,3406;ego,MP,S-S,ego,HV_front,17,15,35,33,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+222,mp2,waymo_train,waymo_500-799,95655,2263;ego,38,51,2263;ego,MP,S-S,ego,HV_front,28,0,53,25,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+223,mp2,waymo_train,waymo_500-799,42218,1727;ego,2,6,1727;ego,MP,S-S,ego,HV_front,2,2,20,20,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+224,mp2,waymo_train,waymo_500-799,96628,368;ego,0,14,368;ego,MP,S-S,ego,HV_front,0,0,14,14,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+225,mp2,waymo_train,waymo_500-799,42375,1696;ego,1,11,1696;ego,MP,S-S,ego,HV_front,0,0,20,20,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+226,cp1,waymo_train,waymo_500-799,43410,44;ego,0,7,ego;44,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+227,mp2,waymo_train,waymo_500-799,97969,1118;ego,22,44,1118;ego,MP,S-S,ego,HV_front,32,20,49,37,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+228,mp2,waymo_train,waymo_500-799,98656,1095;ego,0,28,1095;ego,MP,S-S,ego,HV_front,16,16,32,32,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+229,mp2,waymo_train,waymo_500-799,98967,1500;ego,12,18,1500;ego,MP,S-S,ego,HV_front,4,2,33,31,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+230,mp2,waymo_train,waymo_500-799,99151,1849;ego,31,56,1849;ego,MP,S-S,ego,HV_front,41,20,61,40,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+231,mp2,waymo_train,waymo_500-799,44676,944;ego,0,25,944;ego,MP,S-S,ego,HV_front,18,18,28,28,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+232,mp2,waymo_train,waymo_500-799,100380,2078;ego,0,27,2078;ego,MP,S-S,ego,HV_front,14,14,27,27,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+233,mp2,waymo_train,waymo_500-799,100647,876;ego,17,31,876;ego,MP,S-S,ego,HV_front,12,5,34,27,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+234,mp2,waymo_train,waymo_500-799,45989,160;ego,15,37,160;ego,MP,S-S,ego,HV_front,23,18,39,34,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+235,mp2,waymo_train,waymo_500-799,10116,1648;ego,10,24,1648;ego,MP,S-S,ego,HV_front,19,19,31,31,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+236,cp1,waymo_train,waymo_500-799,101640,167;ego,24,39,ego;167,CP,S-L,167,no-need,no-need,no-need,no-need,no-need,
+237,mp2,waymo_train,waymo_500-799,4681,1115;ego,1,12,1115;ego,MP,S-S,ego,HV_front,0,0,16,16,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+238,mp2,waymo_train,waymo_500-799,47049,434;ego,0,5,434;ego,MP,S-S,ego,HV_front,0,0,17,17,"ego与HV在同一车道上, ego在HV后方直行, HV在ego后方向右侧车道变道."
+239,mp2,waymo_train,waymo_500-799,47659,299;ego,0,14,299;ego,MP,S-S,ego,HV_front,0,0,20,20,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+240,cp1,waymo_train,waymo_500-799,103293,56;ego,53,61,ego;56,CP,S-L,56,no-need,no-need,no-need,no-need,no-need,
+241,mp2,waymo_train,waymo_500-799,48880,2234;ego,34,56,2234;ego,MP,S-S,ego,HV_front,44,20,63,39,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+242,mp2,waymo_train,waymo_500-799,48999,7;ego,14,24,7;ego,MP,R-S,ego,HV_front,4,0,38,34,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+243,cp1,waymo_train,waymo_500-799,49134,45;ego,18,23,45;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+244,mp2,waymo_train,waymo_500-799,105075,152;ego,0,10,152;ego,MP,S-S,ego,HV_front,0,0,13,13,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+245,cp1,waymo_train,waymo_500-799,50425,1865;ego,19,32,ego;1865,CP,S-L,1865,no-need,no-need,no-need,no-need,no-need,
+246,mp2,waymo_train,waymo_500-799,108045,575;ego,1,30,575;ego,MP,S-S,ego,HV_front,18,18,34,34,"HV在ego左侧车道, ego直行, HV在其左前方, 向右变道到ego所在车道."
+247,mp2,waymo_train,waymo_500-799,52705,2369;ego,0,26,2369;ego,MP,S-S,ego,HV_front,9,9,30,30,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+248,mp1,waymo_train,waymo_500-799,108505,701;ego,0,20,701;ego,MP,S-S,701,AV_back,14,14,39,39,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+249,mp2,waymo_train,waymo_500-799,108531,985;ego,0,23,985;ego,MP,S-S,985,HV_front,0,0,7,7,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+250,mp1,waymo_train,waymo_500-799,53939,614;ego,0,5,614;ego,MP,S-S,614,AV_back,2,2,26,26,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+251,mp1,waymo_train,waymo_500-799,110116,566;ego,29,51,566;ego,MP,S-S,566,AV_back,47,28,71,52,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+252,cp1,waymo_train,waymo_500-799,110129,13;ego,12,21,ego;13,CP,S-L,13,no-need,no-need,no-need,no-need,no-need,
+253,mp2,waymo_train,waymo_500-799,55071,2657;ego,26,56,2657;ego,MP,S-S,ego,HV_front,46,30,57,41,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+254,mp2,waymo_train,waymo_500-799,111316,2204;ego,0,10,2204;ego,MP,S-S,ego,HV_front,0,0,17,17,"HV在ego右侧车道, ego直行, HV在其右前方, 向左变道到ego所在车道."
+255,cp1,waymo_train,waymo_500-799,55659,1117;ego,9,19,1117;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+256,cp1,waymo_train,waymo_500-799,111778,1482;ego,16,26,1482;ego,CP,S-R,1482,no-need,no-need,no-need,no-need,no-need,
+257,cp1,waymo_train,waymo_500-799,111877,728;741;ego,21,33,728;ego,CP,R-S,741,no-need,no-need,no-need,no-need,no-need,
+258,cp1,waymo_train,waymo_500-799,111877,728;ego,14,38,728;ego,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+259,cp1,waymo_train,waymo_500-799,56155,1870;ego,35,40,ego;1870,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+260,cp1,waymo_train,waymo_500-799,114024,924;ego,0,9,ego;924,CP,S-L,924,no-need,no-need,no-need,no-need,no-need,
+261,cp1,waymo_train,waymo_500-799,58408,17;ego,7,16,ego;17,CP,S-L,17,no-need,no-need,no-need,no-need,no-need,
+262,cp1,waymo_train,waymo_500-799,60002,630;ego,26,40,ego;630,CP,S-L,630,no-need,no-need,no-need,no-need,no-need,
+263,cp1,waymo_train,waymo_500-799,116482,207;ego,25,47,ego;207,CP,S-L,207,no-need,no-need,no-need,no-need,no-need,
+264,cp1,waymo_train,waymo_500-799,116522,165;ego,32,45,165;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+265,f1,waymo_train,waymo_500-799,117440,458;484;488;ego,25,36,488;ego,MP,S-S,484,HV_front,35,20,50,35,
+266,f1,waymo_train,waymo_500-799,117669,594;ego,4,30,594;ego,MP,S-S,594,HV_front,5,5,6,6,
+267,f1,waymo_train,waymo_500-799,120131,229;ego,10,14,ego;229,MP,L-R,229,HV_front,20,20,30,30,
+268,f1,waymo_train,waymo_500-799,121939,3025;ego,17,26,3025;ego,MP,S-S,ego,HV_front,7,0,36,29,
+269,f1,waymo_train,waymo_500-799,122520,2045;ego,11,34,2045;ego,MP,S-S,ego,HV_front,17,16,39,38,
+270,f1,waymo_train,waymo_500-799,67484,2431;ego,0,10,2431;ego,MP,S-S,ego,HV_front,0,0,14,14,
+271,cp1,waymo_train,waymo_500-799,67714,393;ego,20,26,393;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+272,f1,waymo_train,waymo_500-799,125369,76;ego,0,6,76;ego,MP,S-S,ego,HV_front,0,0,19,19,
+273,f1,waymo_train,waymo_500-799,125917,1209;ego,40,70,1209;ego,MP,S-S,equal,HV_front,56,26,76,46,
+274,f1,waymo_train,waymo_500-799,126426,2447;ego,25,55,2447;ego,MP,S-S,ego,HV_front,39,24,54,39,
+275,f1,waymo_train,waymo_500-799,69345,2;ego,41,64,2;ego,MP,S-S,ego,HV_front,53,22,81,50,
+276,f1,waymo_train,waymo_500-799,127225,1761;ego,12,17,ego;1761,MP,S-S,1761,HV_front,23,21,37,35,
+277,f1,waymo_train,waymo_500-799,127876,2317;ego,16,50,2317;ego,MP,S-S,ego,HV_front,38,32,52,46,
+278,f1,waymo_train,waymo_500-799,128469,1090;ego,31,51,1090;ego,MP,S-S,ego,HV_front,37,16,56,35,
+279,f1,waymo_train,waymo_500-799,129137,2118;ego,4,12,2118;ego,MP,S-S,ego,HV_front,0,0,15,15,
+280,cp1,waymo_train,waymo_500-799,129284,3148;ego,9,17,3148;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+281,cp1,waymo_train,waymo_500-799,72683,1117;ego,19,29,1117;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+282,f1,waymo_train,waymo_500-799,74699,875;ego,2,20,875;ego,MP,S-S,ego,HV_front,0,0,10,10,
+283,f1,waymo_train,waymo_500-799,75378,535;ego,21,27,535;ego,MP,S-S,ego,HV_front,20,9,39,28,
+284,cp1,waymo_train,waymo_500-799,75992,1071;ego,20,28,1071;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+285,cp1,waymo_train,waymo_500-799,77754,1865;ego,29,42,ego;1865,CP,S-L,1865,no-need,no-need,no-need,no-need,no-need,
+286,mp1,waymo_train,waymo_800-999,10004,1739;ego,0,9,1739;ego,MP,S-S,1739,AV_back,7,7,32,32,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+287,f1,waymo_train,waymo_800-999,58606,505;ego,41,56,505;ego,MP,S-S,ego,HV_front,37,6,66,35,
+288,f1,waymo_train,waymo_800-999,11634,863;ego,28,54,863;ego,MP,S-S,ego,HV_front,42,24,73,55,
+289,cp1,waymo_train,waymo_800-999,19020,1188;ego,16,23,1188;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+290,cp1,waymo_train,waymo_800-999,3090,630;ego,16,30,ego;630,CP,S-L,630,no-need,no-need,no-need,no-need,no-need,
+291,f1,waymo_train,waymo_800-999,44194,1876;ego,32,48,1876;ego,MP,S-S,ego,HV_front,35,13,51,29,
+292,cp1,waymo_train,waymo_800-999,67181,3148;ego,19,27,3148;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+293,f1,waymo_train,waymo_800-999,74431,2664;ego,0,17,2664;ego,MP,S-S,ego,HV_front,11,11,35,35,
+294,f1,waymo_train,waymo_800-999,14755,1964;ego,46,55,1964;ego,MP,S-S,ego,HV_front,41,5,71,35,
+295,f1,waymo_train,waymo_800-999,15636,1854;ego,0,20,1854;ego,MP,S-S,ego,HV_front,0,0,15,15,
+296,f1,waymo_train,waymo_800-999,15957,539;545;ego,20,31,545;ego,MP,S-S,545,HV_front,33,23,50,40,
+297,f1,waymo_train,waymo_800-999,17401,707;ego,58,64,707;ego,MP,S-S,ego,HV_front,48,0,71,23,
+298,f1,waymo_train,waymo_800-999,18817,1953;ego,37,62,1953;ego,MP,S-S,ego,HV_front,50,23,66,39,
+299,f1,waymo_train,waymo_800-999,19193,3666;ego,37,71,3666;ego,MP,S-S,ego,HV_front,41,14,48,21,
+300,mp1,waymo_train,waymo_800-999,19973,1739;ego,28,39,1739;ego,MP,S-S,1739,AV_back,37,19,62,44,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+301,f1,waymo_train,waymo_800-999,20273,675;ego,0,12,675;ego,MP,S-S,equal,HV_front,0,0,19,19,
+302,cp1,waymo_train,waymo_800-999,21198,13;ego,32,41,ego;13,CP,S-L,13,no-need,no-need,no-need,no-need,no-need,
+303,cp1,waymo_train,waymo_800-999,21470,167;ego,24,39,ego;167,CP,S-L,167,no-need,no-need,no-need,no-need,no-need,
+304,f1,waymo_train,waymo_800-999,2496,989;ego,0,29,989;ego,MP,S-S,ego,HV_front,14,14,32,32,
+305,f1,waymo_train,waymo_800-999,27572,1844;ego,39,70,1844;ego,MP,S-S,ego,HV_front,55,26,75,46,
+306,f1,waymo_train,waymo_800-999,29090,1633;ego,5,11,1633;ego,MP,S-S,ego,HV_front,3,3,19,19,
+307,cp1,waymo_train,waymo_800-999,29641,1865;ego,9,22,ego;1865,CP,S-L,1865,no-need,no-need,no-need,no-need,no-need,
+308,cp1,waymo_train,waymo_800-999,30244,1865;ego,19,32,ego;1865,CP,S-L,1865,no-need,no-need,no-need,no-need,no-need,
+309,mp1,waymo_train,waymo_800-999,3097,1338;ego,40,48,1338;ego,MP,S-S,1338,AV_back,48,18,72,42,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+310,f1,waymo_train,waymo_800-999,31256,714;ego,1,29,714;ego,MP,S-S,ego,HV_front,21,21,34,34,
+311,cp1,waymo_train,waymo_800-999,33263,1188;ego,6,13,1188;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+312,f1,waymo_train,waymo_800-999,35610,2074;ego,0,6,2074;ego,MP,S-S,ego,HV_front,0,0,20,20,
+313,cp1,waymo_train,waymo_800-999,36868,167;ego,14,29,ego;167,CP,S-L,167,no-need,no-need,no-need,no-need,no-need,
+314,f1,waymo_train,waymo_800-999,36957,1720;ego,44,55,1720;ego,MP,S-S,equal,HV_front,34,0,35,1,
+315,cp1,waymo_train,waymo_800-999,37453,1267;ego,9,22,ego;1267,CP,S-L,1267,no-need,no-need,no-need,no-need,no-need,
+316,f1,waymo_train,waymo_800-999,37919,3074;ego,7,12,3074;ego,MP,S-S,ego,HV_front,0,0,31,31,
+317,cp1,waymo_train,waymo_800-999,38368,924;ego,13,39,ego;924,CP,S-L,924,no-need,no-need,no-need,no-need,no-need,
+318,f1,waymo_train,waymo_800-999,39710,362;ego,26,45,362;ego,MP,S-S,ego,HV_front,39,23,47,31,
+319,mp1,waymo_train,waymo_800-999,39892,506;ego,3,25,506;ego,MP,S-S,506,AV_back,18,18,38,38,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+320,f1,waymo_train,waymo_800-999,42800,1806;ego,0,14,1806;ego,MP,S-S,ego,HV_front,0,0,19,19,
+321,f1,waymo_train,waymo_800-999,44941,190;191;194;ego,26,31,190;ego,MP,S-S,equal,HV_front,19,3,37,21,
+322,f1,waymo_train,waymo_800-999,45999,2;ego,6,15,2;ego,MP,S-S,ego,HV_front,20,20,34,34,
+323,cp1,waymo_train,waymo_800-999,46199,380;ego,18,27,ego;380,CP,S-L,380,no-need,no-need,no-need,no-need,no-need,
+324,f1,waymo_train,waymo_800-999,48968,1946;ego,41,68,1946;ego,MP,S-S,ego,HV_front,57,26,70,39,
+325,f1,waymo_train,waymo_800-999,50982,362;ego,6,25,362;ego,MP,S-S,ego,HV_front,19,19,27,27,
+326,cp1,waymo_train,waymo_800-999,52482,73;ego,26,43,ego;73,CP,R-L,ego,no-need,no-need,no-need,no-need,no-need,
+327,f1,waymo_train,waymo_800-999,52834,2317;ego,16,50,2317;ego,MP,S-S,ego,HV_front,38,32,52,46,
+328,mp1,waymo_train,waymo_800-999,54849,123;ego,0,7,123;ego,MP,S-S,123,AV_back,5,5,29,29,"ego在HV右侧车道, HV直行, ego在其右后方, 向左变道到HV所在车道."
+329,cp1,waymo_train,waymo_800-999,55754,393;ego,30,36,393;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+330,cp1,waymo_train,waymo_800-999,55930,2566;ego,34,50,2566;ego,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+331,f1,waymo_train,waymo_800-999,56132,336;ego,39,51,336;ego,MP,S-S,ego,HV_front,37,8,61,32,
+332,f1,waymo_train,waymo_800-999,56439,2882;ego,3,26,2882;ego,MP,S-S,ego,HV_front,16,16,34,34,
+333,cp1,waymo_train,waymo_800-999,63019,41;ego,0,10,41;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+334,f1,waymo_train,waymo_800-999,63129,1885;ego,32,59,1885;ego,MP,S-S,ego,HV_front,35,13,36,14,
+335,cp1,waymo_train,waymo_800-999,64788,1188;ego,26,33,1188;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+336,f1,waymo_train,waymo_800-999,64985,1488;ego,24,29,1488;ego,MP,S-S,equal,HV_front,24,10,43,29,
+337,f1,waymo_train,waymo_800-999,68940,1041;ego,0,11,1041;ego,MP,S-S,ego,HV_front,2,2,15,15,
+338,f1,waymo_train,waymo_800-999,6992,1985;ego,19,37,1985;ego,MP,S-S,ego,HV_front,33,24,47,38,
+339,f1,waymo_train,waymo_800-999,74752,2980;ego,40,57,2980;ego,MP,S-S,equal,HV_front,30,0,59,29,
+340,mp1,waymo_train,waymo_800-999,76519,3668;ego,37,59,3668;ego,MP,S-S,equal,AV_back,55,28,76,49,"ego在HV左侧车道, HV直行, ego在其左后方, 向右变道到HV所在车道."
+341,f1,waymo_train,waymo_800-999,77058,1998;2003;ego,34,45,2003;ego,MP,S-S,2003,HV_front,28,4,47,23,
+342,f1,waymo_train,waymo_800-999,78767,559;ego,0,18,559;ego,MP,S-S,ego,HV_front,6,6,21,21,
+343,cp1,waymo_train,waymo_800-999,80860,42;ego,0,5,42;ego,CP,S-R,42,no-need,no-need,no-need,no-need,no-need,
+344,cp1,waymo_train,waymo_800-999,80860,44;ego,15,27,ego;44,CP,R-S,ego,no-need,no-need,no-need,no-need,no-need,
+345,cp1,waymo_train,waymo_800-999,80956,207;ego,15,37,ego;207,CP,S-L,207,no-need,no-need,no-need,no-need,no-need,
+346,cp1,waymo_train,waymo_800-999,81821,2;ego,15,31,2;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+347,f1,waymo_train,waymo_800-999,83516,1513;ego,0,7,1513;ego,MP,S-S,ego,HV_front,0,0,9,9,
+348,f1,waymo_train,waymo_800-999,8356,262;ego,51,55,262;ego,MP,S-S,equal,HV_front,41,0,61,20,
+349,f1,waymo_train,waymo_800-999,83877,1447;ego,26,53,1447;ego,MP,S-S,ego,HV_front,41,25,57,41,
+350,cp1,waymo_train,waymo_800-999,84559,45;ego,28,33,45;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+351,f1,waymo_train,waymo_800-999,85208,1089;1092;ego,17,32,1092;ego,MP,S-S,1092,HV_front,25,18,34,27,
+352,f1,waymo_train,waymo_800-999,87562,779;ego,22,40,779;ego,MP,S-S,779,HV_front,28,16,36,24,
+353,cp1,waymo_train,waymo_800-999,8818,18;ego,0,7,18;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+354,f1,waymo_train,waymo_800-999,89545,822;ego,34,38,822;ego,MP,L-S,ego,HV_front,40,16,41,17,
+355,f1,waymo_train,waymo_800-999,90938,807;ego,40,45,807;ego,MP,R-S,ego,HV_front,49,19,51,21,
+356,cp1,waymo_train,waymo_800-999,90978,765;ego,31,37,765;ego,CP,L-S,ego,no-need,no-need,no-need,no-need,no-need,
+357,f1,waymo_train,waymo_800-999,91684,2114;2116;ego,2,12,2114;ego,MP,S-S,2116,HV_front,2,2,13,13,
+358,f1,waymo_train,waymo_800-999,91795,1;ego,26,40,1;ego,MP,S-S,ego,HV_front,28,12,42,26,
+359,f1,waymo_train,waymo_800-999,92804,43;ego,24,48,43;ego,MP,S-S,ego,HV_front,29,15,31,17,
+360,f1,waymo_train,waymo_800-999,9355,1741;ego,11,35,1741;ego,MP,S-S,ego,HV_front,6,5,37,36,
+361,f1,waymo_train,waymo_800-999,96225,1644;ego,0,9,1644;ego,MP,S-S,ego,HV_front,0,0,13,13,
+362,f1,waymo_train,waymo_800-999,96693,1741;ego,31,55,1741;ego,MP,S-S,ego,HV_front,26,5,57,36,
+363,f1,waymo_train,waymo_800-999,96826,926;ego,21,37,926;ego,MP,S-S,ego,HV_front,18,7,36,25,
+364,cp2,waymo_train,waymo_0-299,17189,447;465,13,17,447;465,CP,L-S,465,no-need,no-need,no-need,no-need,no-need,
+365,cp2,waymo_train,waymo_0-299,21978,1744;1750;1760,4,11,1760;1744,CP,S-L,1744,no-need,no-need,no-need,no-need,no-need,
+366,cp2,waymo_train,waymo_0-299,32586,1526;1527,11,19,1527;1526,CP,S-R,1526,no-need,no-need,no-need,no-need,no-need,
+367,cp2,waymo_train,waymo_0-299,4369,363;365,3,12,365;363,CP,L-S,365,no-need,no-need,no-need,no-need,no-need,
+368,cp2,waymo_train,waymo_0-299,43847,2281;2295,21,28,2295;2281,CP,S-L,2281,no-need,no-need,no-need,no-need,no-need,
+369,cp2,waymo_train,waymo_0-299,54799,1547;1551,4,31,1551;1547,CP,L-S,1551,no-need,no-need,no-need,no-need,no-need,
+370,cp2,waymo_train,waymo_0-299,59366,14;47,24,41,14;47,CP,S-L,14,no-need,no-need,no-need,no-need,no-need,
+371,cp2,waymo_train,waymo_0-299,66662,1347;1466,20,24,1466;1347,CP,R-S,1466,no-need,no-need,no-need,no-need,no-need,
+372,cp2,waymo_train,waymo_0-299,94928,408;452,27,31,452;408,CP,L-R,408,no-need,no-need,no-need,no-need,no-need,
+373,cp2,waymo_train,waymo_0-299,98721,1036;1055,0,6,1036;1055,CP,R-S,1055,no-need,no-need,no-need,no-need,no-need,
+374,cp2,waymo_train,waymo_0-299,99205,1412;1425,40,44,1425;1412,CP,R-L,1425,no-need,no-need,no-need,no-need,no-need,
+375,cp2,waymo_train,waymo_0-299,117512,593;611,8,13,593;611,CP,S-L,593,no-need,no-need,no-need,no-need,no-need,
+376,cp2,waymo_train,waymo_0-299,16586,837;839;847,2,9,837;839,CP,S-R,837,no-need,no-need,no-need,no-need,no-need,
+377,cp2,waymo_train,waymo_0-299,16155,12;5,19,23,5;12,CP,L-S,5,no-need,no-need,no-need,no-need,no-need,
+378,cp2,waymo_train,waymo_0-299,17214,934;970,24,36,934;970,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+379,cp2,waymo_train,waymo_0-299,17846,218;233,37,48,233;218,CP,S-L,218,no-need,no-need,no-need,no-need,no-need,
+380,cp2,waymo_train,waymo_0-299,19226,133;178,8,18,178;133,CP,L-S,178,no-need,no-need,no-need,no-need,no-need,
+381,cp2,waymo_train,waymo_0-299,23576,46;5,21,26,5;46,CP,L-S,5,no-need,no-need,no-need,no-need,no-need,
+382,cp2,waymo_train,waymo_0-299,24037,1082;1084,5,10,1082;1084,CP,L-S,1084,no-need,no-need,no-need,no-need,no-need,
+383,cp2,waymo_train,waymo_0-299,28202,1025;1056,2,8,1025;1056,CP,L-S,1056,no-need,no-need,no-need,no-need,no-need,
+384,cp2,waymo_train,waymo_0-299,29741,925;952,25,29,925;952,CP,L-S,952,no-need,no-need,no-need,no-need,no-need,
+385,cp2,waymo_train,waymo_0-299,31557,1314;1323,38,43,1314;1323,CP,S-L,1314,no-need,no-need,no-need,no-need,no-need,
+386,cp2,waymo_train,waymo_0-299,32558,512;513,41,57,513;512,CP,S-L,512,no-need,no-need,no-need,no-need,no-need,
+387,cp2,waymo_train,waymo_0-299,94289,115;129;164,4,24,115;129,CP,S-L,115,no-need,no-need,no-need,no-need,no-need,
+388,cp2,waymo_train,waymo_0-299,34865,19;4,0,4,4;19,CP,R-S,4,no-need,no-need,no-need,no-need,no-need,
+389,cp2,waymo_train,waymo_0-299,96292,2691;2697,34,48,2691;2697,CP,L-S,2697,no-need,no-need,no-need,no-need,no-need,
+390,cp2,waymo_train,waymo_0-299,36173,512;513,1,17,513;512,CP,S-L,512,no-need,no-need,no-need,no-need,no-need,
+391,cp2,waymo_train,waymo_0-299,99490,26;53,18,27,26;53,CP,L-S,53,no-need,no-need,no-need,no-need,no-need,
+392,cp2,waymo_train,waymo_0-299,100998,973;992,6,11,973;992,CP,L-S,992,no-need,no-need,no-need,no-need,no-need,
+393,cp2,waymo_train,waymo_0-299,40441,1025;1051,50,59,1025;1051,CP,L-S,1051,no-need,no-need,no-need,no-need,no-need,
+394,cp2,waymo_train,waymo_0-299,40648,1165;1177,18,31,1165;1177,CP,L-S,1177,no-need,no-need,no-need,no-need,no-need,
+395,cp2,waymo_train,waymo_0-299,40803,2368;2415,3,8,2368;2415,CP,L-S,2415,no-need,no-need,no-need,no-need,no-need,
+396,cp2,waymo_train,waymo_0-299,102474,599;612,23,27,599;612,CP,L-S,612,no-need,no-need,no-need,no-need,no-need,
+397,cp2,waymo_train,waymo_0-299,41328,265;267,8,18,265;267,CP,L-S,267,no-need,no-need,no-need,no-need,no-need,
+398,cp2,waymo_train,waymo_0-299,102881,942;957,2,14,957;942,CP,S-L,942,no-need,no-need,no-need,no-need,no-need,
+399,cp2,waymo_train,waymo_0-299,41618,973;978,40,48,973;978,CP,L-S,978,no-need,no-need,no-need,no-need,no-need,
+400,cp2,waymo_train,waymo_0-299,103593,1252;1274,15,19,1252;1274,CP,L-S,1274,no-need,no-need,no-need,no-need,no-need,
+401,cp2,waymo_train,waymo_0-299,44369,1578;1656,39,43,1578;1656,CP,L-S,1656,no-need,no-need,no-need,no-need,no-need,
+402,cp2,waymo_train,waymo_0-299,106682,4;45;6,53,59,6;4,CP,S-L,4,no-need,no-need,no-need,no-need,no-need,
+403,cp2,waymo_train,waymo_0-299,1092,458;480,39,46,480;458,CP,R-L,480,no-need,no-need,no-need,no-need,no-need,
+404,cp2,waymo_train,waymo_0-299,109592,2281;2295,41,48,2295;2281,CP,S-L,2281,no-need,no-need,no-need,no-need,no-need,
+405,cp2,waymo_train,waymo_0-299,1100,209;248,3,24,209;248,CP,S-L,209,no-need,no-need,no-need,no-need,no-need,
+406,cp2,waymo_train,waymo_0-299,1100,209;224;248,12,22,209;248,CP,S-L,209,no-need,no-need,no-need,no-need,no-need,
+407,cp2,waymo_train,waymo_0-299,51255,541;608,15,32,541;608,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+408,cp2,waymo_train,waymo_0-299,52810,1347;1466,30,34,1466;1347,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+409,cp2,waymo_train,waymo_0-299,115241,1196;1199,57,63,1196;1199,CP,L-R,1196,no-need,no-need,no-need,no-need,no-need,
+410,cp2,waymo_train,waymo_0-299,1154,3099;3139,42,46,3139;3099,CP,S-L,3099,no-need,no-need,no-need,no-need,no-need,
+411,cp2,waymo_train,waymo_0-299,11588,541;578,9,29,578;541,CP,S-L,541,no-need,no-need,no-need,no-need,no-need,
+412,cp2,waymo_train,waymo_0-299,117048,3;58,11,19,3;58,CP,L-S,58,no-need,no-need,no-need,no-need,no-need,
+413,cp2,waymo_train,waymo_0-299,54501,526;543,5,17,543;526,CP,R-S,543,no-need,no-need,no-need,no-need,no-need,
+414,cp2,waymo_train,waymo_0-299,54878,973;992,16,21,973;992,CP,L-S,992,no-need,no-need,no-need,no-need,no-need,
+415,cp2,waymo_train,waymo_0-299,118963,1755;1762,5,30,1755;1762,CP,L-S,1762,no-need,no-need,no-need,no-need,no-need,
+416,cp2,waymo_train,waymo_0-299,120183,1493;1539,22,27,1493;1539,CP,L-S,1539,no-need,no-need,no-need,no-need,no-need,
+417,cp2,waymo_train,waymo_0-299,123325,3200;3206,3,28,3200;3206,CP,L-S,3206,no-need,no-need,no-need,no-need,no-need,
+418,cp2,waymo_train,waymo_0-299,60405,1307;1318,13,17,1318;1307,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+419,cp2,waymo_train,waymo_0-299,126746,1700;1726,43,49,1700;1726,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+420,cp2,waymo_train,waymo_0-299,63553,11;8,30,37,8;11,CP,L-S,8,no-need,no-need,no-need,no-need,no-need,
+421,cp2,waymo_train,waymo_0-299,63992,180;224,11,44,180;224,CP,R-S,224,no-need,no-need,no-need,no-need,no-need,
+422,cp2,waymo_train,waymo_0-299,130362,403;412,38,44,403;412,CP,L-S,412,no-need,no-need,no-need,no-need,no-need,
+423,cp2,waymo_train,waymo_0-299,6694,734;735,0,9,734;735,CP,S-L,734,no-need,no-need,no-need,no-need,no-need,
+424,cp2,waymo_train,waymo_0-299,131432,1193;1216,16,28,1216;1193,CP,S-L,1193,no-need,no-need,no-need,no-need,no-need,
+425,cp2,waymo_train,waymo_0-299,132289,526;543,0,7,543;526,CP,R-S,543,no-need,no-need,no-need,no-need,no-need,
+426,cp2,waymo_train,waymo_0-299,69889,21;31;33,7,13,21;31,CP,L-S,31,no-need,no-need,no-need,no-need,no-need,
+427,cp2,waymo_train,waymo_0-299,135673,3116;3120;3160,31,39,3116;3120,CP,R-S,3120,no-need,no-need,no-need,no-need,no-need,
+428,cp2,waymo_train,waymo_0-299,136403,780;782,0,14,780;782,CP,L-S,782,no-need,no-need,no-need,no-need,no-need,
+429,cp2,waymo_train,waymo_0-299,136449,180;224;310,22,31,180;224,CP,R-S,224,no-need,no-need,no-need,no-need,no-need,
+430,cp2,waymo_train,waymo_0-299,138131,1465;1515,39,48,1515;1465,CP,R-L,1515,no-need,no-need,no-need,no-need,no-need,
+431,cp2,waymo_train,waymo_0-299,138876,1679;1697;1707,1,6,1679;1707,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+432,cp2,waymo_train,waymo_0-299,74373,1578;1656,29,33,1578;1656,CP,L-S,1656,no-need,no-need,no-need,no-need,no-need,
+433,cp2,waymo_train,waymo_0-299,74965,840;851;867,3,8,840;867,CP,L-S,851,no-need,no-need,no-need,no-need,no-need,
+434,cp2,waymo_train,waymo_0-299,141852,1034;1037,0,34,1034;1037,CP,S-R,1034,no-need,no-need,no-need,no-need,no-need,
+435,cp2,waymo_train,waymo_0-299,143484,1346;1443,40,51,1346;1443,CP,R-L,1443,no-need,no-need,no-need,no-need,no-need,
+436,cp2,waymo_train,waymo_0-299,79897,1016;977,6,17,977;1016,CP,L-S,977,no-need,no-need,no-need,no-need,no-need,
+437,cp2,waymo_train,waymo_0-299,80590,780;782,32,54,780;782,CP,L-S,782,no-need,no-need,no-need,no-need,no-need,
+438,cp2,waymo_train,waymo_0-299,85485,541;578,39,59,578;541,CP,S-L,541,no-need,no-need,no-need,no-need,no-need,
+439,cp2,waymo_train,waymo_0-299,86303,2111;2261,55,63,2261;2111,CP,S-L,2111,no-need,no-need,no-need,no-need,no-need,
+440,cp2,waymo_train,waymo_0-299,87960,447;465,33,37,447;465,CP,L-S,465,no-need,no-need,no-need,no-need,no-need,
+441,cp2,waymo_train,waymo_300-499,59,3116;3120;3160,41,49,3116;3120,CP,R-S,3120,no-need,no-need,no-need,no-need,no-need,
+442,cp2,waymo_train,waymo_300-499,6872,1;13;22,7,25,22;1,CP,S-L,1,no-need,no-need,no-need,no-need,no-need,
+443,cp2,waymo_train,waymo_300-499,6872,1;22,6,58,22;1,CP,S-L,1,no-need,no-need,no-need,no-need,no-need,
+444,cp2,waymo_train,waymo_300-499,9780,438;442,27,41,442;438,CP,R-S,442,no-need,no-need,no-need,no-need,no-need,
+445,cp2,waymo_train,waymo_300-499,10601,481;582,55,61,481;582,CP,L-S,582,no-need,no-need,no-need,no-need,no-need,
+446,cp2,waymo_train,waymo_300-499,11637,400;401,67,75,401;400,CP,S-L,400,no-need,no-need,no-need,no-need,no-need,
+447,cp2,waymo_train,waymo_300-499,16574,3019;3027,0,6,3019;3027,CP,R-S,3027,no-need,no-need,no-need,no-need,no-need,
+448,cp2,waymo_train,waymo_300-499,20119,11;8,20,27,8;11,CP,L-S,8,no-need,no-need,no-need,no-need,no-need,
+449,cp2,waymo_train,waymo_300-499,20422,77;83,13,23,77;83,CP,L-S,83,no-need,no-need,no-need,no-need,no-need,
+450,cp2,waymo_train,waymo_300-499,23099,14;16;29,10,18,16;29,CP,S-L,14,no-need,no-need,no-need,no-need,no-need,
+451,cp2,waymo_train,waymo_300-499,23949,1108;1137,25,34,1108;1137,CP,L-S,1137,no-need,no-need,no-need,no-need,no-need,
+452,cp2,waymo_train,waymo_300-499,29440,183;226,33,56,183;226,CP,L-S,226,no-need,no-need,no-need,no-need,no-need,
+453,cp2,waymo_train,waymo_300-499,33152,843;906,6,19,843;906,CP,R-S,906,no-need,no-need,no-need,no-need,no-need,
+454,cp2,waymo_train,waymo_300-499,33517,1902;1907,35,42,1902;1907,CP,S-R,1902,no-need,no-need,no-need,no-need,no-need,
+455,cp2,waymo_train,waymo_300-499,37470,447;463,49,57,463;447,CP,S-L,447,no-need,no-need,no-need,no-need,no-need,
+456,cp2,waymo_train,waymo_300-499,41773,2123;2144,0,17,2123;2144,CP,S-L,2123,no-need,no-need,no-need,no-need,no-need,
+457,cp2,waymo_train,waymo_300-499,42669,1375;1408,20,31,1408;1375,CP,L-S,1408,no-need,no-need,no-need,no-need,no-need,
+458,cp2,waymo_train,waymo_300-499,44350,354;383,29,43,354;383,CP,L-S,383,no-need,no-need,no-need,no-need,no-need,
+459,cp2,waymo_train,waymo_300-499,46011,528;545,3,20,528;545,CP,S-L,528,no-need,no-need,no-need,no-need,no-need,
+460,cp2,waymo_train,waymo_300-499,48698,3136;3146,50,76,3136;3146,CP,S-L,3136,no-need,no-need,no-need,no-need,no-need,
+461,cp2,waymo_train,waymo_300-499,49876,136;191,0,8,191;136,CP,R-S,191,no-need,no-need,no-need,no-need,no-need,
+462,cp2,waymo_train,waymo_300-499,52349,0;43,3,7,43;0,CP,S-L,0,no-need,no-need,no-need,no-need,no-need,
+463,cp2,waymo_train,waymo_300-499,52539,32;5,42,46,32;5,CP,S-L,32,no-need,no-need,no-need,no-need,no-need,
+464,cp2,waymo_train,waymo_300-499,53112,1314;1323,8,13,1314;1323,CP,S-L,1314,no-need,no-need,no-need,no-need,no-need,
+465,cp2,waymo_train,waymo_300-499,53973,2267;2270,49,57,2267;2270,CP,U-U,equal,no-need,no-need,no-need,no-need,no-need,
+466,cp2,waymo_train,waymo_300-499,59151,964;979,31,52,964;979,CP,S-L,964,no-need,no-need,no-need,no-need,no-need,
+467,cp2,waymo_train,waymo_300-499,59833,658;671,1,15,658;671,CP,S-L,658,no-need,no-need,no-need,no-need,no-need,
+468,cp2,waymo_train,waymo_300-499,60083,1679;1697;1707,41,46,1679;1707,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+469,cp2,waymo_train,waymo_300-499,65013,1744;1750;1760,24,31,1760;1744,CP,S-L,1744,no-need,no-need,no-need,no-need,no-need,
+470,cp2,waymo_train,waymo_300-499,65179,1402;1442,13,30,1442;1402,CP,L-S,1442,no-need,no-need,no-need,no-need,no-need,
+471,cp2,waymo_train,waymo_300-499,65531,20;22,34,47,20;22,CP,S-L,20,no-need,no-need,no-need,no-need,no-need,
+472,cp2,waymo_train,waymo_300-499,66067,780;782,12,34,780;782,CP,L-S,782,no-need,no-need,no-need,no-need,no-need,
+473,cp2,waymo_train,waymo_300-499,69844,263;266,23,36,266;263,CP,S-L,263,no-need,no-need,no-need,no-need,no-need,
+474,cp2,waymo_train,waymo_300-499,71482,13;33;7;8,0,8,13;7,CP,S-L,13,no-need,no-need,no-need,no-need,no-need,
+475,cp2,waymo_train,waymo_300-499,72138,663;700,24,31,700;663,CP,R-S,700,no-need,no-need,no-need,no-need,no-need,
+476,cp2,waymo_train,waymo_300-499,72816,3;58,51,60,3;58,CP,L-S,58,no-need,no-need,no-need,no-need,no-need,
+477,cp2,waymo_train,waymo_300-499,75225,175;192,11,32,175;192,CP,L-S,192,no-need,no-need,no-need,no-need,no-need,
+478,cp2,waymo_train,waymo_300-499,77559,1547;1551,0,11,1551;1547,CP,L-S,1551,no-need,no-need,no-need,no-need,no-need,
+479,cp2,waymo_train,waymo_300-499,84031,2305;2307,26,37,2305;2307,CP,L-S,2307,no-need,no-need,no-need,no-need,no-need,
+480,cp2,waymo_train,waymo_300-499,88727,121;98,48,58,98;121,CP,L-S,98,no-need,no-need,no-need,no-need,no-need,
+481,cp2,waymo_train,waymo_300-499,88914,471;484;485,30,36,484;471,CP,S-L,471,no-need,no-need,no-need,no-need,no-need,
+482,cp2,waymo_train,waymo_300-499,90981,1489;1494,35,39,1494;1489,CP,R-S,1494,no-need,no-need,no-need,no-need,no-need,
+483,cp2,waymo_train,waymo_300-499,95944,681;684,36,47,684;681,CP,L-S,684,no-need,no-need,no-need,no-need,no-need,
+484,cp2,waymo_train,waymo_500-799,119513,314;319,14,18,319;314,CP,S-L,314,no-need,no-need,no-need,no-need,no-need,
+485,cp2,waymo_train,waymo_500-799,52425,645;651,39,43,645;651,CP,L-S,651,no-need,no-need,no-need,no-need,no-need,
+486,cp2,waymo_train,waymo_500-799,79016,1430;1493,24,34,1493;1430,CP,S-L,1430,no-need,no-need,no-need,no-need,no-need,
+487,cp2,waymo_train,waymo_500-799,109983,2249;2252,46,63,2252;2249,CP,L-S,2252,no-need,no-need,no-need,no-need,no-need,
+488,cp2,waymo_train,waymo_500-799,128074,354;365,31,42,365;354,CP,S-L,354,no-need,no-need,no-need,no-need,no-need,
+489,cp2,waymo_train,waymo_500-799,14665,1467;1628,13,17,1467;1628,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+490,cp2,waymo_train,waymo_500-799,15513,663;669,32,53,669;663,CP,L-S,669,no-need,no-need,no-need,no-need,no-need,
+491,cp2,waymo_train,waymo_500-799,15538,511;571,1,15,511;571,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+492,cp2,waymo_train,waymo_500-799,21338,405;460,40,45,405;460,CP,L-S,460,no-need,no-need,no-need,no-need,no-need,
+493,cp2,waymo_train,waymo_500-799,27135,191;194,37,57,194;191,CP,S-L,191,no-need,no-need,no-need,no-need,no-need,
+494,cp2,waymo_train,waymo_500-799,82573,1578;1579;1580,12,16,1579;1580,CP,S-R,1578,no-need,no-need,no-need,no-need,no-need,
+495,cp2,waymo_train,waymo_500-799,86227,2735;2775,18,35,2735;2775,CP,L-S,2775,no-need,no-need,no-need,no-need,no-need,
+496,cp2,waymo_train,waymo_500-799,86441,1285;1315,25,29,1285;1315,CP,L-S,1315,no-need,no-need,no-need,no-need,no-need,
+497,cp2,waymo_train,waymo_500-799,33421,942;957,2,14,957;942,CP,S-L,942,no-need,no-need,no-need,no-need,no-need,
+498,cp2,waymo_train,waymo_500-799,87109,183;226,13,36,183;226,CP,L-S,226,no-need,no-need,no-need,no-need,no-need,
+499,cp2,waymo_train,waymo_500-799,35901,231;398,21,26,231;398,CP,L-S,398,no-need,no-need,no-need,no-need,no-need,
+500,cp2,waymo_train,waymo_500-799,36814,1231;1235,13,18,1231;1235,CP,L-S,1235,no-need,no-need,no-need,no-need,no-need,
+501,cp2,waymo_train,waymo_500-799,91640,512;513,1,17,513;512,CP,S-L,512,no-need,no-need,no-need,no-need,no-need,
+502,cp2,waymo_train,waymo_500-799,37980,1025;1051,30,39,1025;1051,CP,L-S,1051,no-need,no-need,no-need,no-need,no-need,
+503,cp2,waymo_train,waymo_500-799,92237,488;505,26,31,488;505,CP,L-S,505,no-need,no-need,no-need,no-need,no-need,
+504,cp2,waymo_train,waymo_500-799,3864,3136;3146,50,76,3136;3146,CP,S-L,3136,no-need,no-need,no-need,no-need,no-need,
+505,cp2,waymo_train,waymo_500-799,40698,1193;1216,26,38,1216;1193,CP,S-L,1193,no-need,no-need,no-need,no-need,no-need,
+506,cp2,waymo_train,waymo_500-799,94869,661;702,30,37,702;661,CP,R-S,702,no-need,no-need,no-need,no-need,no-need,
+507,cp2,waymo_train,waymo_500-799,42054,400;401,67,75,401;400,CP,S-L,400,no-need,no-need,no-need,no-need,no-need,
+508,cp2,waymo_train,waymo_500-799,42785,400;401,17,26,400;401,CP,L-S,401,no-need,no-need,no-need,no-need,no-need,
+509,cp2,waymo_train,waymo_500-799,43436,782;790,0,5,782;790,CP,S-R,782,no-need,no-need,no-need,no-need,no-need,
+510,cp2,waymo_train,waymo_500-799,43842,964;979,41,62,964;979,CP,S-L,964,no-need,no-need,no-need,no-need,no-need,
+511,cp2,waymo_train,waymo_500-799,99907,1016;977,46,57,977;1016,CP,L-S,977,no-need,no-need,no-need,no-need,no-need,
+512,cp2,waymo_train,waymo_500-799,102163,1891;1897,33,37,1897;1891,CP,S-L,1891,no-need,no-need,no-need,no-need,no-need,
+513,cp2,waymo_train,waymo_500-799,47897,658;671,31,45,658;671,CP,S-L,658,no-need,no-need,no-need,no-need,no-need,
+514,cp2,waymo_train,waymo_500-799,105132,1417;1418,12,19,1417;1418,CP,R-L,1418,no-need,no-need,no-need,no-need,no-need,
+515,cp2,waymo_train,waymo_500-799,107906,2;7,4,13,7;2,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+516,cp2,waymo_train,waymo_500-799,52891,231;398,41,46,231;398,CP,L-S,398,no-need,no-need,no-need,no-need,no-need,
+517,cp2,waymo_train,waymo_500-799,109160,2305;2307,36,47,2305;2307,CP,L-S,2307,no-need,no-need,no-need,no-need,no-need,
+518,cp2,waymo_train,waymo_500-799,114000,3099;3139,42,46,3139;3099,CP,S-L,3099,no-need,no-need,no-need,no-need,no-need,
+519,cp2,waymo_train,waymo_500-799,117398,2;7,24,33,7;2,CP,S-L,2,no-need,no-need,no-need,no-need,no-need,
+520,cp2,waymo_train,waymo_500-799,117413,658;671,11,25,658;671,CP,S-L,658,no-need,no-need,no-need,no-need,no-need,
+521,cp2,waymo_train,waymo_500-799,118254,541;578,9,29,578;541,CP,S-L,541,no-need,no-need,no-need,no-need,no-need,
+522,cp2,waymo_train,waymo_500-799,62138,68;72,20,30,72;68,CP,S-L,68,no-need,no-need,no-need,no-need,no-need,
+523,cp2,waymo_train,waymo_500-799,6226,934;970,24,36,934;970,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+524,cp2,waymo_train,waymo_500-799,119020,16;6,40,56,16;6,CP,L-S,6,no-need,no-need,no-need,no-need,no-need,
+525,cp2,waymo_train,waymo_500-799,120512,534;536,0,10,534;536,CP,L-S,536,no-need,no-need,no-need,no-need,no-need,
+526,cp2,waymo_train,waymo_500-799,121940,646;648,69,74,646;648,CP,S-R,646,no-need,no-need,no-need,no-need,no-need,
+527,cp2,waymo_train,waymo_500-799,122050,320;321;332,3,11,321;332,CP,S-L,320,no-need,no-need,no-need,no-need,no-need,
+528,cp2,waymo_train,waymo_500-799,123578,115;129;164,4,24,115;129,CP,S-L,115,no-need,no-need,no-need,no-need,no-need,
+529,cp2,waymo_train,waymo_500-799,67331,458;480,39,46,480;458,CP,R-L,480,no-need,no-need,no-need,no-need,no-need,
+530,cp2,waymo_train,waymo_500-799,125079,840;851,2,7,840;851,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+531,cp2,waymo_train,waymo_500-799,70370,1196;1199,57,63,1196;1199,CP,L-R,1196,no-need,no-need,no-need,no-need,no-need,
+532,cp2,waymo_train,waymo_500-799,73379,1282;1283,14,18,1282;1283,CP,R-S,1283,no-need,no-need,no-need,no-need,no-need,
+533,cp2,waymo_train,waymo_500-799,73918,613;655,8,14,613;655,CP,L-S,655,no-need,no-need,no-need,no-need,no-need,
+534,cp2,waymo_train,waymo_500-799,74419,1758;1792,7,20,1792;1758,CP,S-L,1758,no-need,no-need,no-need,no-need,no-need,
+535,cp2,waymo_train,waymo_500-799,7650,2276;2288,36,43,2276;2288,CP,L-S,2288,no-need,no-need,no-need,no-need,no-need,
+536,cp2,waymo_train,waymo_500-799,7713,2281;2295,21,28,2295;2281,CP,S-L,2281,no-need,no-need,no-need,no-need,no-need,
+537,cp2,waymo_train,waymo_500-799,77805,1669;1787;1803,26,34,1669;1787,CP,L-S,1787,no-need,no-need,no-need,no-need,no-need,
+538,cp2,waymo_train,waymo_500-799,78018,1025;1051,50,59,1025;1051,CP,L-S,1051,no-need,no-need,no-need,no-need,no-need,
+539,cp2,waymo_train,waymo_800-999,35634,1412;1425,20,24,1425;1412,CP,R-L,1425,no-need,no-need,no-need,no-need,no-need,
+540,cp2,waymo_train,waymo_800-999,45540,794;801,1,16,794;801,CP,S-R,794,no-need,no-need,no-need,no-need,no-need,
+541,cp2,waymo_train,waymo_800-999,45540,801;808,21,27,801;808,CP,R-S,808,no-need,no-need,no-need,no-need,no-need,
+542,cp2,waymo_train,waymo_800-999,89821,1718;1722,0,5,1718;1722,CP,L-S,1722,no-need,no-need,no-need,no-need,no-need,
+543,cp2,waymo_train,waymo_800-999,10904,1447;1448,23,29,1447;1448,CP,L-S,1448,no-need,no-need,no-need,no-need,no-need,
+544,cp2,waymo_train,waymo_800-999,11567,779;789,1,20,789;779,CP,S-L,779,no-need,no-need,no-need,no-need,no-need,
+545,cp2,waymo_train,waymo_800-999,2224,1314;1323,18,23,1314;1323,CP,S-L,1314,no-need,no-need,no-need,no-need,no-need,
+546,cp2,waymo_train,waymo_800-999,26168,491;512,18,24,491;512,CP,L-S,512,no-need,no-need,no-need,no-need,no-need,
+547,cp2,waymo_train,waymo_800-999,26301,2276;2288,16,23,2276;2288,CP,L-S,2288,no-need,no-need,no-need,no-need,no-need,
+548,cp2,waymo_train,waymo_800-999,43498,304;317,0,5,304;317,CP,S-L,304,no-need,no-need,no-need,no-need,no-need,
+549,cp2,waymo_train,waymo_800-999,4446,541;608,35,52,541;608,CP,S-S,equal,no-need,no-need,no-need,no-need,no-need,
+550,cp2,waymo_train,waymo_800-999,44786,3136;3146,0,16,3136;3146,CP,S-L,3136,no-need,no-need,no-need,no-need,no-need,
+551,cp2,waymo_train,waymo_800-999,47705,1310;1313,8,22,1310;1313,CP,L-S,1313,no-need,no-need,no-need,no-need,no-need,
+552,cp2,waymo_train,waymo_800-999,49564,526;543,15,27,543;526,CP,R-S,543,no-need,no-need,no-need,no-need,no-need,
+553,cp2,waymo_train,waymo_800-999,55015,258;280,37,49,258;280,CP,S-L,258,no-need,no-need,no-need,no-need,no-need,
+554,cp2,waymo_train,waymo_800-999,56068,218;233,0,8,233;218,CP,S-L,218,no-need,no-need,no-need,no-need,no-need,
+555,cp2,waymo_train,waymo_800-999,57920,151;152,4,19,151;152,CP,L-S,152,no-need,no-need,no-need,no-need,no-need,
+556,cp2,waymo_train,waymo_800-999,59997,925;952,5,9,925;952,CP,L-S,952,no-need,no-need,no-need,no-need,no-need,
+557,cp2,waymo_train,waymo_800-999,63488,787;830,37,47,830;787,CP,R-L,830,no-need,no-need,no-need,no-need,no-need,
+558,cp2,waymo_train,waymo_800-999,63699,1214;1220,20,27,1220;1214,CP,L-S,1220,no-need,no-need,no-need,no-need,no-need,
+559,cp2,waymo_train,waymo_800-999,63921,892;961,49,55,961;892,CP,S-L,892,no-need,no-need,no-need,no-need,no-need,
+560,cp2,waymo_train,waymo_800-999,64975,12;5,9,13,5;12,CP,L-S,5,no-need,no-need,no-need,no-need,no-need,
+561,cp2,waymo_train,waymo_800-999,65486,1430;1493,24,34,1493;1430,CP,S-L,1430,no-need,no-need,no-need,no-need,no-need,
+562,cp2,waymo_train,waymo_800-999,70626,889;925,21,25,925;889,CP,L-L,equal,no-need,no-need,no-need,no-need,no-need,
+563,cp2,waymo_train,waymo_800-999,74743,2106;2108,10,14,2108;2106,CP,S-L,2106,no-need,no-need,no-need,no-need,no-need,
+564,cp2,waymo_train,waymo_800-999,79653,681;713,52,56,681;713,CP,L-S,713,no-need,no-need,no-need,no-need,no-need,
+565,cp2,waymo_train,waymo_800-999,8064,14;47,14,31,14;47,CP,S-L,14,no-need,no-need,no-need,no-need,no-need,
+566,cp2,waymo_train,waymo_800-999,82258,1;22,4,38,22;1,CP,S-L,1,no-need,no-need,no-need,no-need,no-need,
+567,cp2,waymo_train,waymo_800-999,82258,1;13;22,1,5,22;1,CP,S-L,1,no-need,no-need,no-need,no-need,no-need,
+568,cp2,waymo_train,waymo_800-999,87468,3;58,41,50,3;58,CP,L-S,58,no-need,no-need,no-need,no-need,no-need,
+569,cp2,waymo_train,waymo_800-999,87652,151;152,14,29,151;152,CP,L-S,152,no-need,no-need,no-need,no-need,no-need,
+570,cp2,waymo_train,waymo_800-999,88919,183;226,13,36,183;226,CP,L-S,226,no-need,no-need,no-need,no-need,no-need,
+571,cp2,waymo_train,waymo_800-999,89194,919;982,22,26,982;919,CP,L-S,982,no-need,no-need,no-need,no-need,no-need,
+572,cp2,waymo_train,waymo_800-999,90448,3136;3146,40,66,3136;3146,CP,S-L,3136,no-need,no-need,no-need,no-need,no-need,
+573,f2,waymo_train,waymo_0-299,36865,857;869,0,9,857;869,MP,S-S,869,AV_front,0,0,19,19,
+574,f2,waymo_train,waymo_0-299,43040,648;652,0,14,648;652,MP,S-S,equal,AV_front,2,2,17,17,
+575,f2,waymo_train,waymo_0-299,572,1983;1987,3,8,1983;1987,MP,S-S,1987,AV_front,0,0,16,16,
+576,f2,waymo_train,waymo_0-299,85413,1473;1484,0,25,1473;1484,MP,S-S,1484,AV_front,10,10,35,35,
+577,f2,waymo_train,waymo_0-299,114790,47;49,4,19,49;47,MP,S-S,49,AV_front,0,0,21,21,
+578,f2,waymo_train,waymo_0-299,17028,1451;1452;1463,2,10,1452;1451,MP,S-S,1452,AV_front,0,0,18,18,
+579,f2,waymo_train,waymo_0-299,3052,587;601,24,35,587;601,MP,S-S,601,AV_front,20,6,41,27,
+580,f2,waymo_train,waymo_0-299,90959,483;497,2,26,483;497,MP,S-S,497,AV_front,2,2,34,34,
+581,f2,waymo_train,waymo_0-299,30645,2037;2049,19,32,2037;2049,MP,S-S,2049,AV_front,21,12,44,35,
+582,f2,waymo_train,waymo_0-299,91488,187;201,1,16,187;201,MP,S-S,201,AV_front,0,0,25,25,
+583,f2,waymo_train,waymo_0-299,31290,1236;1259,38,42,1236;1259,MP,S-S,1259,AV_front,28,0,52,24,
+584,f2,waymo_train,waymo_0-299,31963,1051;1055;1064,7,20,1051;1055,MP,S-S,1055,AV_front,9,9,30,30,
+585,f2,waymo_train,waymo_0-299,33927,157;159,2,10,157;159,MP,S-S,159,AV_front,0,0,17,17,
+586,f2,waymo_train,waymo_0-299,34080,14;33,10,25,14;33,MP,S-S,33,AV_front,8,8,31,31,
+587,f2,waymo_train,waymo_0-299,35696,10;12;7,24,32,12;10,MP,S-S,equal,AV_front,15,1,22,8,
+588,f2,waymo_train,waymo_0-299,96647,877;890,0,7,877;890,MP,S-S,890,AV_front,0,0,18,18,
+589,f2,waymo_train,waymo_0-299,37626,1243;1323,4,17,1243;1323,MP,S-S,1323,AV_front,0,0,23,23,
+590,f2,waymo_train,waymo_0-299,3773,2448;2449,0,17,2448;2449,MP,S-S,2449,AV_front,0,0,15,15,
+591,f2,waymo_train,waymo_0-299,98965,141;91,20,25,91;141,MP,S-S,91,AV_front,15,5,33,23,
+592,f2,waymo_train,waymo_0-299,38875,1766;1768,0,69,1768;1766,MP,S-S,equal,AV_front,6,6,17,17,
+593,f2,waymo_train,waymo_0-299,137037,22;3,18,29,3;22,MP,S-S,3,AV_front,10,2,30,22,
+594,f2,waymo_train,waymo_0-299,7292,403;409,2,10,403;409,MP,S-S,409,AV_front,0,0,17,17,
+595,f2,waymo_train,waymo_0-299,73818,1877;1885,35,41,1877;1885,MP,S-S,1885,AV_front,25,0,38,13,
+596,f2,waymo_train,waymo_300-499,30753,137;162,0,9,137;162,MP,S-S,162,AV_front,0,0,15,15,
+597,f2,waymo_train,waymo_300-499,31058,1066;1070,23,43,1066;1070,MP,S-S,equal,AV_front,26,13,48,35,
+598,f2,waymo_train,waymo_300-499,36764,775;779,36,57,775;779,MP,S-S,779,AV_front,41,15,59,33,
+599,f2,waymo_train,waymo_300-499,37687,46;55;62,46,53,46;55,MP,S-S,55,AV_front,42,6,58,22,
+600,f2,waymo_train,waymo_300-499,37736,426;428,21,28,426;428,MP,S-S,428,AV_front,11,0,29,18,
+601,f2,waymo_train,waymo_300-499,42416,607;620,0,10,620;607,MP,S-S,620,AV_front,0,0,21,21,
+602,f2,waymo_train,waymo_300-499,44965,715;724,32,43,715;724,MP,S-S,724,AV_front,29,7,48,26,
+603,f2,waymo_train,waymo_300-499,45843,1070;1078,30,51,1078;1070,MP,S-S,1078,AV_front,40,20,58,38,
+604,f2,waymo_train,waymo_300-499,47439,2;3,0,8,2;3,MP,S-S,3,AV_front,0,0,19,19,
+605,f2,waymo_train,waymo_300-499,48134,1336;1356,4,11,1336;1356,MP,S-S,1356,AV_front,0,0,20,20,
+606,f2,waymo_train,waymo_300-499,49649,2691;2707,0,5,2707;2691,MP,S-S,2707,AV_front,0,0,22,22,
+607,f2,waymo_train,waymo_300-499,51089,426;428,41,48,426;428,MP,S-S,428,AV_front,31,0,49,18,
+608,f2,waymo_train,waymo_300-499,51793,969;970,40,57,969;970,MP,S-S,970,AV_front,30,0,55,25,
+609,f2,waymo_train,waymo_300-499,52617,1562;1564,0,14,1562;1564,MP,S-S,1564,AV_front,0,0,18,18,
+610,f2,waymo_train,waymo_300-499,52805,551;609,0,4,551;609,MP,S-S,equal,AV_front,0,0,10,10,
+611,f2,waymo_train,waymo_300-499,53455,1635;1648,28,32,1635;1648,MP,S-S,1648,AV_front,18,0,32,14,
+612,f2,waymo_train,waymo_300-499,55718,1888;1889,0,10,1889;1888,MP,S-S,1889,AV_front,0,0,30,30,
+613,f2,waymo_train,waymo_300-499,57273,1041;1042,9,25,1041;1042,MP,S-S,1042,AV_front,11,11,38,38,
+614,f2,waymo_train,waymo_300-499,60488,52;8,16,22,8;52,MP,S-S,equal,AV_front,13,7,37,31,
+615,f2,waymo_train,waymo_300-499,63485,34;7,6,20,7;34,MP,L-L,equal,AV_front,0,0,25,25,
+616,f2,waymo_train,waymo_300-499,65646,809;892,0,6,809;892,MP,S-S,892,AV_front,0,0,14,14,
+617,f2,waymo_train,waymo_300-499,72525,1600;1619,0,6,1600;1619,MP,S-S,equal,AV_front,0,0,13,13,
+618,f2,waymo_train,waymo_300-499,73907,2195;2199,29,33,2199;2195,MP,S-S,2199,AV_front,19,0,44,25,
+619,f2,waymo_train,waymo_300-499,74334,2616;2630,26,31,2616;2630,MP,S-S,2630,AV_front,17,1,34,18,
+620,f2,waymo_train,waymo_300-499,78507,1262;1263,0,13,1263;1262,MP,S-S,1263,AV_front,0,0,23,23,
+621,f2,waymo_train,waymo_300-499,81317,702;727,16,21,727;702,MP,S-S,equal,AV_front,15,9,25,19,
+622,f2,waymo_train,waymo_300-499,82821,426;428,1,8,426;428,MP,S-S,equal,AV_front,0,0,9,9,
+623,f2,waymo_train,waymo_300-499,84523,353;382,47,55,353;382,MP,S-S,382,AV_front,37,0,53,16,
+624,f2,waymo_train,waymo_300-499,88364,775;776,24,37,776;775,MP,S-S,776,AV_front,24,10,39,25,
+625,f2,waymo_train,waymo_300-499,89707,720;733,31,36,720;733,MP,S-S,equal,AV_front,32,11,47,26,
+626,f2,waymo_train,waymo_300-499,89825,2037;2049,39,52,2037;2049,MP,S-S,2049,AV_front,41,12,64,35,
+627,f2,waymo_train,waymo_300-499,91402,187;201,21,36,187;201,MP,S-S,201,AV_front,20,9,45,34,
+628,f2,waymo_train,waymo_300-499,93106,1473;1484,32,65,1473;1484,MP,S-S,1484,AV_front,50,28,75,53,
+629,f2,waymo_train,waymo_300-499,94209,1066;1070,3,23,1066;1070,MP,S-S,equal,AV_front,6,6,28,28,
+630,f2,waymo_train,waymo_300-499,95256,10;17;7,10,24,7;17,MP,S-S,17,AV_front,0,0,39,39,
+631,f2,waymo_train,waymo_300-499,96337,197;200,5,22,197;200,MP,S-S,equal,AV_front,0,0,8,8,
+632,f2,waymo_train,waymo_500-799,13010,16;2;3,1,47,2;16,MP,S-S,2,AV_front,28,28,32,32,
+633,f2,waymo_train,waymo_500-799,101200,1833;1844,0,6,1833;1844,MP,S-S,1844,AV_front,0,0,15,15,
+634,f2,waymo_train,waymo_500-799,13157,1816;1830,1,30,1816;1830,MP,S-S,equal,AV_front,15,15,40,40,
+635,f2,waymo_train,waymo_500-799,48427,353;382,27,35,353;382,MP,S-S,382,AV_front,17,0,33,16,
+636,f2,waymo_train,waymo_500-799,54760,2813;2817,3,9,2817;2813,MP,S-S,2817,AV_front,1,1,18,18,
+637,f2,waymo_train,waymo_500-799,64373,46;55;62,26,33,46;55,MP,S-S,55,AV_front,22,6,38,22,
+638,f2,waymo_train,waymo_500-799,83323,716;721,17,23,721;716,MP,S-S,721,AV_front,7,0,26,19,
+639,f2,waymo_train,waymo_500-799,105115,877;890,41,57,877;890,MP,S-S,890,AV_front,46,15,68,37,
+640,f2,waymo_train,waymo_500-799,15325,453;459,22,38,459;453,MP,S-S,459,AV_front,19,7,55,43,
+641,f2,waymo_train,waymo_500-799,15617,37;54,27,31,37;54,MP,S-S,54,AV_front,17,0,33,16,
+642,f2,waymo_train,waymo_500-799,18084,287;381,2,25,287;381,MP,R-S,381,AV_front,31,31,40,40,
+643,f2,waymo_train,waymo_500-799,23598,1001;951,1,15,951;1001,MP,S-S,equal,AV_front,18,18,21,21,
+644,f2,waymo_train,waymo_500-799,25406,1732;1740,13,27,1732;1740,MP,S-S,1740,AV_front,14,11,36,33,
+645,f2,waymo_train,waymo_500-799,25592,1093;1118,12,17,1118;1093,MP,S-S,1118,AV_front,2,0,20,18,
+646,f2,waymo_train,waymo_500-799,80153,2616;2630,26,31,2616;2630,MP,S-S,2630,AV_front,17,1,34,18,
+647,f2,waymo_train,waymo_500-799,28915,969;970,20,37,969;970,MP,S-S,970,AV_front,10,0,35,25,
+648,f2,waymo_train,waymo_500-799,29350,195;233,13,26,195;233,MP,S-S,233,AV_front,9,6,27,24,
+649,f2,waymo_train,waymo_500-799,83496,1620;1622,16,22,1622;1620,MP,S-S,1622,AV_front,6,0,28,22,
+650,f2,waymo_train,waymo_500-799,33613,1833;1844,6,26,1833;1844,MP,S-S,1844,AV_front,13,13,35,35,
+651,f2,waymo_train,waymo_500-799,87164,723;748,13,18,723;748,MP,S-S,748,AV_front,11,8,33,30,
+652,f2,waymo_train,waymo_500-799,87652,2000;2004,31,47,2004;2000,MP,S-S,2004,AV_front,30,9,49,28,
+653,f2,waymo_train,waymo_500-799,34232,329;364,6,38,329;364,MP,L-L,equal,AV_front,1,1,50,50,
+654,f2,waymo_train,waymo_500-799,34905,1161;1164;1166,25,31,1166;1164,MP,S-S,1164,AV_front,15,0,46,31,
+655,f2,waymo_train,waymo_500-799,35237,2280;2395,54,71,2395;2280,MP,S-L,2280,AV_front,79,35,80,36,
+656,f2,waymo_train,waymo_500-799,37627,1145;1155,38,48,1145;1155,MP,L-L,equal,AV_front,28,0,42,14,
+657,f2,waymo_train,waymo_500-799,37740,2181;2190,29,33,2181;2190,MP,S-S,2190,AV_front,21,2,47,28,
+658,f2,waymo_train,waymo_500-799,37740,2180;2181;2190,10,28,2181;2190,MP,S-S,2181,AV_front,21,21,47,47,
+659,f2,waymo_train,waymo_500-799,41319,775;779,16,37,775;779,MP,S-S,779,AV_front,21,15,39,33,
+660,f2,waymo_train,waymo_500-799,42118,46;55;62,16,23,46;55,MP,S-S,55,AV_front,12,6,28,22,
+661,f2,waymo_train,waymo_500-799,97452,2513;2514,0,5,2514;2513,MP,S-S,2514,AV_front,0,0,14,14,
+662,f2,waymo_train,waymo_500-799,44724,211;214,13,17,211;214,MP,S-S,equal,AV_front,3,0,14,11,
+663,f2,waymo_train,waymo_500-799,44895,708;712,40,51,708;712,MP,S-S,equal,AV_front,36,6,60,30,
+664,f2,waymo_train,waymo_500-799,98170,7;8,34,47,8;7,MP,S-S,8,AV_front,29,5,58,34,
+665,f2,waymo_train,waymo_500-799,45248,392;402,12,17,392;402,MP,S-S,402,AV_front,16,14,26,24,
+666,f2,waymo_train,waymo_500-799,45633,1993;1996,0,15,1993;1996,MP,S-S,1996,AV_front,0,0,27,27,
+667,f2,waymo_train,waymo_500-799,103108,1654;1660,47,61,1660;1654,MP,S-S,1660,AV_front,48,11,67,30,
+668,f2,waymo_train,waymo_500-799,48167,2508;2686,21,33,2508;2686,MP,S-S,2686,AV_front,16,5,39,28,
+669,f2,waymo_train,waymo_500-799,104779,607;620,29,40,620;607,MP,S-S,equal,AV_front,22,3,51,32,
+670,f2,waymo_train,waymo_500-799,50888,197;200,15,32,197;200,MP,S-S,equal,AV_front,5,0,18,13,
+671,f2,waymo_train,waymo_500-799,51525,1718;1722,29,45,1718;1722,MP,S-S,1722,AV_front,24,5,54,35,
+672,f2,waymo_train,waymo_500-799,5162,14;33,0,15,14;33,MP,S-S,33,AV_front,0,0,21,21,
+673,f2,waymo_train,waymo_500-799,51669,407;429,24,33,407;429,MP,S-S,429,AV_front,14,0,34,20,
+674,f2,waymo_train,waymo_500-799,52080,1635;1648,28,32,1635;1648,MP,S-S,1648,AV_front,18,0,32,14,
+675,f2,waymo_train,waymo_500-799,108386,102;116,3,11,102;116,MP,S-S,116,AV_front,13,13,26,26,
+676,f2,waymo_train,waymo_500-799,108507,216;217,21,41,217;216,MP,S-S,217,AV_front,30,19,43,32,
+677,f2,waymo_train,waymo_800-999,57019,869;887;903,21,27,869;887,MP,S-S,887,AV_front,14,3,30,19,
+678,f2,waymo_train,waymo_800-999,62986,1197;1221,22,27,1221;1197,MP,S-S,1221,AV_front,12,0,29,17,
+679,f2,waymo_train,waymo_800-999,64072,2280;2395,54,71,2395;2280,MP,S-L,2280,AV_front,79,35,80,36,
+680,f2,waymo_train,waymo_800-999,66110,260;261,55,65,261;260,MP,L-L,equal,AV_front,45,0,76,31,
+681,f2,waymo_train,waymo_800-999,70093,1118;1122,11,19,1122;1118,MP,S-S,1122,AV_front,2,1,22,21,
+682,f2,waymo_train,waymo_800-999,7323,1493;1518,0,5,1493;1518,MP,S-S,equal,AV_front,0,0,16,16,
+683,f2,waymo_train,waymo_800-999,81067,1816;1830,31,60,1816;1830,MP,S-S,1830,AV_front,45,24,70,49,
+684,f2,waymo_train,waymo_800-999,81140,1394;1395,41,55,1394;1395,MP,S-S,1394,AV_front,44,13,71,40,
+685,f2,waymo_train,waymo_800-999,83422,50;58,2,8,50;58,MP,S-S,58,AV_front,0,0,18,18,
+686,f2,waymo_train,waymo_800-999,84477,16;2,3,14,16;2,MP,S-S,2,AV_front,0,0,19,19,
+687,f2,waymo_train,waymo_800-999,84666,37;54,27,31,37;54,MP,S-S,54,AV_front,17,0,33,16,
+688,f2,waymo_train,waymo_800-999,85169,1682;1686,15,30,1682;1686,MP,S-S,1686,AV_front,16,11,36,31,
+689,f2,waymo_train,waymo_800-999,86865,1716;1730,6,26,1730;1716,MP,S-S,1730,AV_front,8,8,32,32,
+690,f2,waymo_train,waymo_800-999,88419,1816;1830,1,30,1816;1830,MP,S-S,equal,AV_front,15,15,40,40,
+691,f2,waymo_train,waymo_800-999,89755,1763;1774,34,47,1763;1774,MP,S-S,equal,AV_front,38,14,57,33,
+692,f2,waymo_train,waymo_800-999,9070,1262;1263,34,53,1263;1262,MP,S-S,1263,AV_front,31,7,63,39,
+693,f2,waymo_train,waymo_800-999,96286,2280;2395,34,51,2395;2280,MP,S-L,2280,AV_front,59,35,60,36,
+694,f2,waymo_train,waymo_800-999,96839,1;49,40,49,1;49,MP,S-S,49,AV_front,38,8,55,25,
+695,f2,waymo_train,waymo_800-999,97042,2469;2470,24,51,2470;2469,MP,S-S,2470,AV_front,37,23,57,43,
+696,f2,waymo_train,waymo_800-999,97086,2448;2449,35,57,2448;2449,MP,S-S,2449,AV_front,39,9,55,25,
+697,f2,waymo_train,waymo_0-299,67796,693;701,37,56,701;693,MP,S-S,701,AV_front,27,0,42,15,
+698,f2,waymo_train,waymo_0-299,22758,1447;1482;1511;1520,38,45,1482;1447,MP,S-S,equal,AV_front,28,0,51,23,
+699,f2,waymo_train,waymo_0-299,92882,2552;2568;2571,21,46,2552;2568,MP,S-S,equal,AV_front,11,0,34,23,
+700,f2,waymo_train,waymo_0-299,49360,1067;1073,7,19,1073;1067,MP,S-S,1067,AV_front,0,0,5,5,
+701,f2,waymo_train,waymo_300-499,1918,2348;2350,14,21,2350;2348,MP,L-L,equal,AV_front,29,25,39,35,
+702,f2,waymo_train,waymo_300-499,12119,577;598,12,22,577;598,MP,S-S,equal,AV_front,2,0,14,12,
+703,f2,waymo_train,waymo_500-799,20002,811;832,17,29,811;832,MP,S-S,832,AV_front,7,0,13,6,
+704,f2,waymo_train,waymo_800-999,88316,1666;1696,56,62,1666;1696,MP,S-L,1666,AV_front,52,6,61,15,
+705,f2,waymo_train,waymo_800-999,88449,138;144,22,29,138;144,MP,S-S,138,AV_front,20,7,21,8,
